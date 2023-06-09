@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 :root {
-  --background: #FFFFFF;
-  --technature:#58A857
+  --background: #ffffff;
+  --technature: #58a857;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -16,9 +16,79 @@
 }
 
 body {
-  margin:0;
-  padding:0;
-  background-color:var(--background);
+  margin: 0;
+  padding: 0;
+  background-color: var(--background);
+  overflow-y: visible;
+}
+
+body.openModal {
+  overflow-y: hidden;
+
+}
+
+.hideMain{
+  opacity:1;
+  transition: opacity 2s;
+}
+
+.hideMain.close{
+  opacity:0;
+  transition: opacity 0.3s;
+}
+
+.show{
+  opacity:1;
+  transition: opacity 2s;
+}
+
+.show.close{
+  opacity:0;
+  transition: opacity 0.3s;
 }
 
 
+.modalAnimation {
+  will-change: transform;
+  transform: translate3d(0px, -100%, 0px);
+  transition: transform 1s;
+  transition-timing-function: ease-in;
+}
+
+.modalAnimationClose {
+  transition: transform 1s;
+  transform: translate3d(0px, -0%, 0px);
+  transition-timing-function: ease-out;
+
+}
+
+* {
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar{
+  width:15px;
+}
+
+.example {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+::-webkit-scrollbar-track{
+  background-color:rgb(210, 210, 210);
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: var(--technature);
+  border-radius:100vw;
+}
+
+::-webkit-scrollbar-thumb:hover{
+  background-color: #3f763e;
+  border-radius:100vw;
+}
+
+.sectionGradient{
+  background-image: linear-gradient(to right top, #ffc8e7, #ffbcc6, #ffb99c, #f7bf76, #c7ca63, #98ce75, #64cf91, #00ccb1, #00c2ce, #00b4e8, #00a2f7, #2a8bf4);
+}
