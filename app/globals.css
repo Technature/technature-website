@@ -24,6 +24,7 @@ body {
 
 body.openModal {
   overflow-y: hidden;
+  touch-action: none;
 
 }
 
@@ -51,7 +52,7 @@ body.openModal {
 .modalAnimation {
   will-change: transform;
   transform: translate3d(0px, -100%, 0px);
-  transition: transform 1s;
+  transition: transform 1s 0.3s;
   transition-timing-function: ease-in;
 }
 
@@ -91,4 +92,167 @@ body.openModal {
 
 .sectionGradient{
   background-image: linear-gradient(to right top, #ffc8e7, #ffbcc6, #ffb99c, #f7bf76, #c7ca63, #98ce75, #64cf91, #00ccb1, #00c2ce, #00b4e8, #00a2f7, #2a8bf4);
+}
+
+.frostedGlass{
+  /* From https://css.glass */
+background: rgba(255, 255, 255, 0.19);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(10px);
+-webkit-backdrop-filter: blur(10px);
+border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+
+/* MODAL ANIMATION each item is a seperate <a> */
+.item1{
+  opacity: 100;
+  transform: translateY(0px);
+  transition: transform 0.4s 0.7s,opacity 0.5s 0.6s;
+  transition-timing-function: ease-out;
+}
+
+.item1.slide{  
+  opacity: 0;
+  transform: translateY(-80px);
+  transition: transform 0.5s  ,opacity 0.6s;
+  transition-timing-function: ease-in;
+}
+
+
+.item2{
+  opacity: 100;
+  transform: translateY(0px);
+  transition: transform 0.4s 0.6s,opacity 0.5s 0.6s;
+  transition-timing-function: ease-out;
+}
+
+.item2.slide{  
+  opacity: 0;
+  transform: translateY(-80px);
+  transition: transform 0.5s 0.1s,opacity 0.6s;
+  transition-timing-function: ease-in;
+}
+
+
+.item3{
+  opacity: 100;
+  transform: translateY(0px);
+  transition: transform 0.4s 0.5s,opacity 0.5s 0.6s;
+  transition-timing-function: ease-out;
+}
+
+.item3.slide{  
+  opacity: 0;
+  transform: translateY(-80px);
+  transition: transform 0.5s 0.2s,opacity 0.6s;
+  transition-timing-function: ease-in;
+}
+
+
+.item4{
+  opacity: 100;
+  transform: translateY(0px);
+  transition: transform 0.4s 0.4s,opacity 0.5s 0.6s;
+  transition-timing-function: ease-out;
+}
+
+.item4.slide{  
+  opacity: 0;
+  transform: translateY(-80px);
+  transition: transform 0.5s 0.3s,opacity 0.6s;
+  transition-timing-function: ease-in;
+}
+
+
+.item5{
+  opacity: 100;
+  transform: translateY(0px);
+  transition: transform 0.4s 0.3s,opacity 0.5s 0.6s;
+  transition-timing-function: ease-out;
+}
+
+.item5.slide{  
+  opacity: 0;
+  transform: translateY(-80px);
+  transition: transform 0.5s 0.4s,opacity 0.6s;
+  transition-timing-function: ease-in;
+}
+
+
+/* MODAL ANIMATION FOR SUB links */
+
+.subItem1{
+  opacity: 100;
+  transform: translateY(0px);
+  transition: transform 0.4s 0.5s,opacity 0.5s 0.2s;
+  transition-timing-function: ease-out;
+}
+
+.subItem1.slide{  
+  opacity: 0;
+  transform: translateY(-80px);
+  transition: transform 0.5s  ,opacity 0.6s;
+  transition-timing-function: ease-in;
+}
+
+
+.subItem2{
+  opacity: 100;
+  transform: translateY(0px);
+  transition: transform 0.4s 0.4s,opacity 0.5s 0.2s;
+  transition-timing-function: ease-out;
+}
+
+.subItem2.slide{  
+  opacity: 0;
+  transform: translateY(-80px);
+  transition: transform 0.5s 0.1s,opacity 0.6s;
+  transition-timing-function: ease-in;
+}
+
+
+.subItem3{
+  opacity: 100;
+  transform: translateY(0px);
+  transition: transform 0.4s 0.3s,opacity 0.5s 0.2s;
+  transition-timing-function: ease-out;
+}
+
+.subItem3.slide{  
+  opacity: 0;
+  transform: translateY(-80px);
+  transition: transform 0.5s 0.2s,opacity 0.6s;
+  transition-timing-function: ease-in;
+}
+
+
+.subItem4{
+  opacity: 100;
+  transform: translateY(0px);
+  transition: transform 0.4s 0.2s,opacity 0.5s 0.2s;
+  transition-timing-function: ease-out;
+}
+
+.subItem4.slide{  
+  opacity: 0;
+  transform: translateY(-80px);
+  transition: transform 0.5s 0.3s,opacity 0.6s;
+  transition-timing-function: ease-in;
+}
+
+
+.subItem5{
+  opacity: 100;
+  transform: translateY(0px);
+  transition: transform 0.4s 0.1s,opacity 0.5s 0.2s;
+  transition-timing-function: ease-out;
+}
+
+.subItem5.slide{  
+  opacity: 0;
+  transform: translateY(-80px);
+  transition: transform 0.5s 0.4s,opacity 0.6s;
+  transition-timing-function: ease-in;
 }

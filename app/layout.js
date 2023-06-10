@@ -9,13 +9,10 @@ import Image from "next/image";
 import Head from "next/head";
 import { useState } from "react";
 import Footer from "../components/footer";
+import Modal from "@/components/Modal";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export const metadata = {
-  title: "Technature",
-  description: "Technature company website",
-};
 
 export default function RootLayout({ children }) {
   const [open, setOpen] = useState(false);
@@ -25,7 +22,7 @@ export default function RootLayout({ children }) {
   };
 
   return (
-    <html lang="en" >
+    <html lang="en">
       <body className={open ? "openModal" : ""}>
         <header className=" p-2 fixed left-[10px] top-[20px] z-20">
           <div className="cursor-pointer m-5">
@@ -46,18 +43,14 @@ export default function RootLayout({ children }) {
             </div>
 
             <div className="text-gray-900 hover:text-lime-600 font-bold mr-6 fixed right-40 top-10 z-0">
-              <Link href="/contactUs">Contact </Link>
+              <Link href="/contact">Contact </Link>
             </div>
           </nav>
         </header>
         <Burger openModal={openModal} opened={open}></Burger>
 
-        <div
-          id="modal"
-          className={`w-full h-screen bg-lime-600  z-20 fixed top-[0px] left-[0px] right-0 m-0 block ${
-            open ? "modalAnimationClose" : "modalAnimation"
-          }`}
-        ></div>
+        <Modal opened={open}></Modal>
+
         <div className={`hideMain ${open ? "close" : ""}`}>{children}</div>
 
         <div className={`hideMain ${open ? "close" : ""}`}>
