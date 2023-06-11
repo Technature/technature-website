@@ -1,0 +1,4 @@
+{
+  "https://unpkg.com/three@0.140.0/build/three.module.js": { "integrity": "sha512-aUf6VRbN+kWoRvXh5LJAWIkHWTx3LiYn1fAHsOiwaadw6TWFSvphD83eRmHPzDjhrhK4l7njALmTQ8k2bGehBA==", "contentType": "application/javascript; charset=utf-8" },
+  "version": 1
+}

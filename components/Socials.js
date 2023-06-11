@@ -7,7 +7,7 @@ console.log(`stroke-${color}`)
 
         <div class="flex mb-6">
         <a href="/" target="_blank" rel="noopener noreferrer">
-          <svg className="ml-4 hover:opacity-70 " width="48" height="48" viewBox="0 0 48 48">
+          <svg className=" hover:opacity-70 " width="48" height="48" viewBox="0 0 48 48">
             <g
               id="Group_385"
               data-name="Group 385"
