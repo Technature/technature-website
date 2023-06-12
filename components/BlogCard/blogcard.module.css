@@ -1,0 +1,43 @@
+
+.imageGrow{
+    transform: scale(1.25);
+    transition: transform 0.3s;
+    transition-timing-function: ease-out;
+  }
+  
+  .image {
+  transition: transform 0.3s;
+  transition-timing-function: ease-out;
+  }
+
+  
+  
+  .blogDescr{
+    color:black;
+    transition: color 0.4s;
+  }
+
+    
+  .blogDescrHover{
+    transition: color 0.5s;
+    color:white
+  }
+
+  .blogTag{
+    color:rgb(101 163 13);
+    transition:color 0.5s;
+  }
+
+  .blogTagHover{
+    color:black;
+    transition:color 0.5s;
+  }
+
+  .bg{
+    background-color:transparent ;
+    transition:background-color 0.4s ;
+  }
+  .bgHover{
+    background-color:rgb(101 163 13) ;
+    transition:background-color 0.4s ;
+  }

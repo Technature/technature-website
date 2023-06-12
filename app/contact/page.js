@@ -28,9 +28,9 @@ useEffect(() => {
     var c = document.querySelector("#mousetrail"),
         ctx = c.getContext("2d"),
         colors = [
-          {r: 255, g:  255, b:  255},
-          {r: 255, g: 0, b: 73},
-          {r: 104, g: 0, b: 183}
+          {r: 204, g:  51, b:  255},
+          {r: 255, g: 153, b: 0},
+          {r: 51, g: 153, b: 255}
         ],
         cIndex = 0, maxColors = colors.length,
         total = 0, segment = 10000,
@@ -45,6 +45,7 @@ useEffect(() => {
       // e.preventDefault();
       if (e.touches) e = e.touches[0];
       var r = c.getBoundingClientRect();
+      console.log("x,",e.clientX,"y",e.clientY)
       return {
         x: e.clientX - r.left,
         y: e.clientY - r.top
@@ -57,71 +58,55 @@ useEffect(() => {
       px = pos.x;
       py = pos.y;
     }
-    
     function plotLine(ctx, x1, y1, x2, y2) {
-  ctx.fillStyle = bg_color; 
-        ctx.clearRect(0,0,c.width,c.height);
-   
+      // Fade the previous frame by covering the canvas with a semi-transparent rectangle
+      ctx.fillStyle = "rgba(255, 255, 255, 0.07)";
+      ctx.fillRect(0, 0, c.width, c.height);
+    
       var diffX = Math.abs(x2 - x1),
           diffY = Math.abs(y2 - y1),
           dist = Math.sqrt(diffX * diffX + diffY * diffY),
           step = dist / 50,
           i = 0,
           t, b, x, y;
-      
+    
       while (i < dist) {
         t = Math.min(1, i / dist);
     
         x = x1 + (x2 - x1) * t;
         y = y1 + (y2 - y1) * t;
     
-        // ctx.shadowBlur = 500;
-        // ctx.shadowOffsetX = 0;
-        // ctx.shadowOffsetY = 0;
-        // ctx.shadowColor = getColor();
-    
-        // console.log(getColor())
         ctx.fillStyle = getColor();
         ctx.beginPath();
-        ctx.arc(x, y, 40, 0, Math.PI*2);
-        console.log(diffX)
+        ctx.arc(x, y, 40, 0, Math.PI * 2);
         ctx.fill();
         i += step;
       }
-
- 
-   
+    
       function getColor() {
-      
         var r, g, b, a, t, c1, c2;
-        
+    
         c1 = colors[cIndex];
         c2 = colors[(cIndex + 1) % maxColors];
         t = Math.min(1, total / segment);
-        
+    
         if (++total > segment) {
           total = 0;
           segment_counter++;
-          // console.log(segment_counter, getColor())
-          bg_color = "rgba("+ global_r + ","+global_g+","+global_b +",0.05)";
-    
           if (++cIndex >= maxColors) cIndex = 0;
         }
-      
-        global_r = c1.r + (c2.r - c1.r) * t
+    
+        global_r = c1.r + (c2.r - c1.r) * t;
         global_g = c1.g + (c2.g - c1.g) * t;
         global_b = c1.b + (c2.b - c1.b) * t;
     
-    
-        r = c1.r + (c2.r - c1.r) * t
+        r = c1.r + (c2.r - c1.r) * t;
         g = c1.g + (c2.g - c1.g) * t;
         b = c1.b + (c2.b - c1.b) * t;
     
-    
-        return "rgb(" + (r|0) + "," + (g|0) + "," + (b|0) + ")";
+        return "rgb(" + (r | 0) + "," + (g | 0) + "," + (b | 0) + ")";
       }
     }
-    
     window.onresize = setSize;
     function setSize() {
       c.width = window.innerWidth;
