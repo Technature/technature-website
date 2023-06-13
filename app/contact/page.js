@@ -4,6 +4,7 @@ import Image from "next/image";
 import { Inter, Sofia_Sans, Prompt } from "next/font/google";
 import { useEffect, useState } from "react";
 import Socials from "@/components/Socials";
+import { useFormik } from "formik";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -13,7 +14,51 @@ const sofia = Sofia_Sans({ subsets: ["latin"] });
 
 export default function Contact() {
 
+  const formik = useFormik({
+    initialValues: 
+    {
+      firstName: "",
+      lastName: "",
+      from:"",
+      message:""
+  },
 
+    validationSchema:  Yup.object().shape({
+      from: Yup.string().email("Η ηλεκτρονική διεύθυνση δεν είναι εγκυρή").required("Το πεδίο Email είναι υποχρεωρικό"),
+      firstName:Yup.string().required(),
+      lastName: Yup.string().required(),
+      message: Yup.string().max(250)
+    }),
+
+    onSubmit: async (values) => {
+
+      const form = {
+        firstName: values.firstName,
+        lastName: values.lastName,
+        from: values.from,
+        message:values.message
+
+       
+      };
+      axios
+        .post(`${CoreService.baseURL}/user/register`, form)
+        .then( (res)=> {
+            router.push({ pathname: '/registerSuccess' })
+        
+        })
+        .catch((err) => {
+          if(err?.response?.data?.message==="email exists"){
+            setOpen(true)
+            setError("Το email υπάρχει ήδη")
+          }else{
+            setOpen(true)
+            setError("Κάτι πήγε στραβά!")
+          }
+          
+          
+        });
+    },
+  });
     
 useEffect(() => {
     
@@ -131,11 +176,11 @@ useEffect(() => {
     </div>
 
     <div id="form" className="w-1/3   p-10 frostedGlass z-40"> 
-    <input className="w-[47%] border-zinc-400 border-b-2 bg-transparent mb-10 mr-5" placeholder="First Name" type="text"></input>
-    <input className="w-[47%] border-zinc-400 border-b-2 bg-transparent mb-10" placeholder="Last Name" type="text"></input>
-    <input className="w-full border-zinc-400 border-b-2 bg-transparent mb-10" placeholder="Last Name" type="email"></input>
-    <textarea  className="w-full border-zinc-400 border-2 bg-transparent mb-10" placeholder="Message"></textarea>
-    <button className="border-lime-600 rounded-3xl border-2 px-9 py-2 text-lime-600 hover:text-white hover:bg-lime-600 active:opacity-70 text-sm">SUBMIT</button>
+    <input className="w-[47%] border-zinc-400 border-b-2 bg-transparent mb-10 mr-5" name="firstName" placeholder="First Name" onChange={setContextValues("firstName")} type="text"></input>
+    <input className="w-[47%] border-zinc-400 border-b-2 bg-transparent mb-10" name="lastName" placeholder="Last Name" onChange={setContextValues("lastName")} type="text"></input>
+    <input className="w-full border-zinc-400 border-b-2 bg-transparent mb-10" name="from" placeholder="Email" onChange={setContextValues("email")} type="email"></input>
+    <textarea  className="w-full border-zinc-400 border-2 bg-transparent mb-10" name="message" placeholder="Message"></textarea>
+    <button className="border-lime-600 rounded-3xl border-2 px-9 py-2 text-lime-600 hover:text-white hover:bg-lime-600 active:opacity-70 text-sm" onClick={handleSubmit}>SUBMIT</button>
     </div>
 
     </div>)

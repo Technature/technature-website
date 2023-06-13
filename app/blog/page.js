@@ -2,9 +2,9 @@ import Image from "next/image";
 import { Inter, Sofia_Sans, Prompt } from "next/font/google";
 import ImageDistort from "@/components/imageDistort/imageDistort";
 import BlogCard from "@/components/BlogCard/BlogCard";
-import { blogPosts } from "@/helpers/dummyData";
 import MainButton from "@/components/MainButton";
 import ImageCard from "@/components/ImageCard";
+import axios from "axios"
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -15,7 +15,15 @@ export const metadata = {
   description: "Technature company website",
 };
 
-export default function Blog() {
+async function getData(){
+  const res = await axios.get('http://localhost:3000/api/blog/getAll')
+
+  return res.data
+}
+
+export default async function Blog() {
+ 
+  const blogs=await getData()
 
 
   return (
@@ -40,15 +48,15 @@ export default function Blog() {
 
         <figure className="w-4/5 h-[50vh] relative">
           <div id="gradient" className="absolute bottom-0 z-10 w-full h-1/2" style={{ background: "linear-gradient(0deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%)" }} ></div>
-          <Image src={blogPosts[0].photoPath} fill="true" className="object-cover" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"></Image>
+          <Image src={blogs[0].pathName} fill="true" className="object-cover" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"></Image>
           <div className={`absolute bottom-20 z-30 left-20 w-full`}>
-            {blogPosts[0].tags.map((tag) => {
+            {blogs[0].tags.map((tag) => {
               return (
                 <span className={`text-lime-400 font-extrabold text-3xl mr-5 ${sofia.className} `}>{tag}</span>
 
               )
             })}
-            <h1 className={`text-white font-extrabold text-3xl z-30 ${sofia.className} `}>{blogPosts[0].title}</h1>
+            <h1 className={`text-white font-extrabold text-3xl z-30 ${sofia.className} `}>{blogs[0].title}</h1>
           </div>
           
         </figure>
@@ -68,3 +76,4 @@ export default function Blog() {
     </main>
   );
 }
+

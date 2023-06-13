@@ -4,9 +4,9 @@ import Services from "@/components/Services";
 import Gallery from "@/components/Gallery"
 import ScrollGallery from "@/components/ScrollGallery";
 import BlogCard from "@/components/BlogCard/BlogCard";
-import { blogPosts } from "@/helpers/dummyData";
 import MainButton from "@/components/MainButton";
 import ImageDistort from "@/components/imageDistort/imageDistort";
+import axios from "axios"
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,7 +17,16 @@ export const metadata = {
   description: "Technature company website",
 };
 
-export default function Home() {
+async function getData(){
+  const res = await axios.get('http://localhost:3000/api/blog/getAll')
+
+  return res.data
+}
+
+
+export default async function Home() {
+
+  const blogs=await getData()
 
 
   return (
@@ -110,8 +119,8 @@ export default function Home() {
             Latest articles
           </h1>
           <div id="blogWrapper" className="w-[80%] flex flex-row justify-center items-start  flex-wrap mb-20">
-            {blogPosts.map((blogPost) => {
-              return <BlogCard title={blogPost.title} tags={blogPost.tags} photoPath={blogPost.photoPath}></BlogCard>
+            {blogs.map((blogPost) => {
+              return <BlogCard title={blogPost.title} tags={blogPost.tags} photoPath={blogPost.pathName}></BlogCard>
             })}
 
           </div>

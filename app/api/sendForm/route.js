@@ -9,7 +9,7 @@ console.log(body)
   const message = {
     from: body.from,
     to: process.env.NEXT_PUBLIC_GMAIL_EMAIL_ADDRESS,
-    subject: body.subject,
+    subject:`Contact Message from ${body.firstName} ${body.lastName}`,
     text: body.message,
     html: `<p>${body.message}</p>`,
   };

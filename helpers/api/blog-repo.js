@@ -1,9 +1,7 @@
 import getConfig from 'next/config';
-import jwt from 'jsonwebtoken';
-import bcrypt from 'bcryptjs';
-import { db } from 'helpers/api';
+import { db } from './db';
 
-const { serverRuntimeConfig } = getConfig();
+
 const Blog = db.Blog;
 
 export const blogRepo = {
