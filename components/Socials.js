@@ -5,7 +5,7 @@ export default function Socials({openModal,opened,color}) {
 console.log(`stroke-${color}`)
     return (
 
-        <div class="flex mb-6">
+        <div className="flex mb-6">
         <a href="/" target="_blank" rel="noopener noreferrer">
           <svg className=" hover:opacity-70 " width="48" height="48" viewBox="0 0 48 48">
             <g
