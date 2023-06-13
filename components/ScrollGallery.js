@@ -12,11 +12,11 @@ const  ScrollGallery = ({sofia})=>{
             <h1
               className={`${sofia.className} text-gray-800 tracking-tighter md:text-5xl text-3xl  mb-2 font-extrabold `}
             >
-              Beauty
+              Κοινό.
             </h1>
             <h2 className={`${sofia.className} text-gray-600  font-semibold`}>
-              Developing stunning one-of-a-kind digital design that catches
-              people’s eye and brings your brand to life online.
+            Μέσω σωστών τεχνικών και γνώσης ετών πάνω στο τομέα του μάρκετινγκ, αναζητούμε το σωστό κοινό για να συνδέσουμε το brand σας μαζί του.
+
             </h2>
           </div>
 
@@ -25,12 +25,10 @@ const  ScrollGallery = ({sofia})=>{
             <h1
               className={`${sofia.className} text-gray-800 tracking-tighter md:text-5xl text-3xl  mb-2 font-extrabold `}
             >
-              Thought
+              Ορατότητα.
             </h1>
             <h2 className={`${sofia.className} text-gray-600  font-semibold`}>
-              As a web design agency, we love to deliver meaningful and
-              intuitive user experiences that build trust with your target
-              audience.
+            Βελτιστοποιούμε τόσο την εμφάνιση σας αλλά και το τρόπου και τη συχνότητα που εμφανίζεστε στα social media και στο διαδίκτυο.
             </h2>
           </div>
 
@@ -39,11 +37,34 @@ const  ScrollGallery = ({sofia})=>{
             <h1
               className={`${sofia.className} text-gray-800 tracking-tighter md:text-5xl text-3xl  mb-2 font-extrabold `}
             >
-              Impact
+              Περιεχόμενο.
             </h1>
             <h2 className={`${sofia.className} text-gray-600  font-semibold`}>
-              Designing tailor made solutions that resonate with your customers
-              and drives them to act.
+            Σχετικό και με γνώμονα τα αποτελέσματα.
+            </h2>
+          </div>
+
+          <div className="mb-80">
+            <div className="relative top-[33px] right-8 text-lime-600">04</div>
+            <h1
+              className={`${sofia.className} text-gray-800 tracking-tighter md:text-5xl text-3xl  mb-2 font-extrabold `}
+            >
+             Ταξίδι.
+            </h1>
+            <h2 className={`${sofia.className} text-gray-600  font-semibold`}>
+            Διασφαλίζουμε ότι οι πελάτες σας λαμβάνουν όλες τις πληροφορίες που χρειάζονται.
+            </h2>
+          </div>
+
+          <div className="mb-80">
+            <div className="relative top-[33px] right-8 text-lime-600">05</div>
+            <h1
+              className={`${sofia.className} text-gray-800 tracking-tighter md:text-5xl text-3xl  mb-2 font-extrabold `}
+            >
+         Αποτέλεσμα.
+            </h1>
+            <h2 className={`${sofia.className} text-gray-600  font-semibold`}>
+            Αποσκοπούμε στο να προσελκύσουμε το κατάλληλο κοινό και να αυξήσουμε την επισκεψημότητα στο brand σας ώστε να πετύχουμε τους επιχειρηματικούς σας στόχους.
             </h2>
           </div>
         </div>

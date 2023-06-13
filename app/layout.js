@@ -8,7 +8,7 @@ import Burger from "@/components/Burger";
 import Image from "next/image";
 import Head from "next/head";
 import { useState } from "react";
-import Footer from "../components/footer";
+import Footer from "@/components/footer";
 import Modal from "@/components/Modal";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -24,8 +24,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={open ? "openModal" : ""}>
-        <header className=" p-2 fixed left-[10px] top-[20px] z-20">
-          <div className="cursor-pointer m-5">
+        <header className=" p-2 fixed left-[10px] top-[20px] z-50">
+          <div className="cursor-pointer m-5" onClick={() => {
+            setOpen(false)
+          }}>
             <Link href="/">
               <Image
                 src="/logo2.png"
@@ -49,7 +51,7 @@ export default function RootLayout({ children }) {
         </header>
         <Burger openModal={openModal} opened={open}></Burger>
 
-        <Modal opened={open}></Modal>
+        <Modal openModal={openModal} opened={open}></Modal>
 
         <div className={`hideMain ${open ? "close" : ""}`}>{children}</div>
 

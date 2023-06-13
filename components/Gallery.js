@@ -1,4 +1,5 @@
 import Image from "next/image";
+import ImageCard from "./ImageCard";
 
 
 const  Gallery = ({sofia})=>{
@@ -13,43 +14,22 @@ const  Gallery = ({sofia})=>{
           <Image src="/work.svg" fill={true}></Image>
         </div>
         <div className="w-1/3 ml-20 mt-40">
-          <h1
-            className={`${sofia.className} text-white tracking-tighter md:text-7xl text-5xl  mb-5 font-extrabold `}
-          >
+          <h1 className={`${sofia.className} text-white tracking-tighter md:text-7xl text-5xl  mb-5 font-extrabold `}>
             Shit-hot work for hot-shot brands
           </h1>
         </div>
       </div>
       
-                <div id="imageGallery" className="flex mt-20">
-                <div id="imageCard" className="w-[500px] m-12">
-                <Image src="/pic1.webp" width={500} height={500}></Image>
-                <p className={`${sofia.className} text-lime-500 font-semibold mb-5`}>BRANDING &nbsp; &nbsp; E-COMMERCE &nbsp; &nbsp; MARKETING</p>
-                <h1
-            className={`${sofia.className} text-white  md:text-3xl text-4xl  mb-2 font-extrabold `}
-          >
-            Our services
-          </h1>
-          <p className={`${sofia.className} text-white font-medium`}>We completely transformed the image of Bristol's finest coffee company.</p>
-                </div>  
+                <div id="imageGallery" className="w-full flex justify-center mt-20">
                 
-                
-                
-                   <div id="imageCard" className="w-[500px]  m-6">
-                <Image src="/pic1.webp" width={500} height={500}></Image>
-                <p className={`${sofia.className} text-lime-500 font-semibold mb-5`}>BRANDING &nbsp; &nbsp; E-COMMERCE &nbsp; &nbsp; MARKETING</p>
-                <h1
-            className={`${sofia.className} text-white  md:text-3xl text-4xl  mb-2 font-extrabold `}
-          >
-            Our services
-          </h1>
-          <p className={`${sofia.className} text-white font-medium`}>We completely transformed the image of Bristol's finest coffee company.</p>
+                   <div id="image-card-wrapper" className="w-1/3   m-8">
+                   <ImageCard src={"/pic1.webp"}></ImageCard>
                 </div>
-                
-                
-            
+
+                <div id="image-card-wrapper" className="w-1/3">
+                   <ImageCard src={"/pic1.webp"}></ImageCard>
                 </div>
-       
+                </div>
       </section>
         </>
     )

@@ -102,6 +102,25 @@ backdrop-filter: blur(30px);
 border: 1px solid rgba(255, 255, 255, 0.06);
 }
 
+/* DISTORT EFFECT FOR THE HERO IMAGE IN THE PAGES */
+
+
+  
+.distortContainer {
+  /* This will come into play later */
+  perspective: 5px;
+  
+ 
+
+}
+
+.distortInner {
+  /* box-shadow: -1px 3px 20px 15px rgba(80, 80, 80, 0.25); */
+}
+
+.distortInner {
+  transition: transform 0.5s;
+}
 
 /* MODAL ANIMATION each item is a seperate <a> */
 .item1{

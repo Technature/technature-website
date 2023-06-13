@@ -6,6 +6,7 @@ import ScrollGallery from "@/components/ScrollGallery";
 import BlogCard from "@/components/BlogCard/BlogCard";
 import { blogPosts } from "@/helpers/dummyData";
 import MainButton from "@/components/MainButton";
+import ImageDistort from "@/components/imageDistort/imageDistort";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -24,21 +25,24 @@ export default function Home() {
 
       {/* SECTION 1 */}
       <section className=" h-[100vh] relative width-full  flex items-center justify-center flex-col sm:flex-row ">
-        <div className=" w-1/3 relative mr-[60px] ml-[30px] ">
-          <Image src="/pic1.webp" width={500} height={500}></Image>
-        </div>
-        <div className=" w-1/3 ">
-          <h1
-            className={`${sofia.className} text-gray-800 tracking-tighter md:text-7xl text-4xl  mb-5 font-extrabold`}
-          >
-           Crafting Digital Experiences
-          </h1>
-          <h2>
-            We’re a creative web design agency based in London that crafts
-            beautiful and original websites for brands who refuse to blend in.
+     
+     <ImageDistort src={"/home.png"}></ImageDistort>
+    
+     <div className=" w-1/3 ml-40">
+       <h1
+         className={`${sofia.className} text-gray-800 tracking-tighter md:text-6xl text-4xl mb-5   font-extrabold`}
+       >Δημιουργώντας ψηφιακές εμπειρίες
+       </h1>
+       <h2>
+       Ένα όμορφο ταξίδι προς την ανάπτυξη του brand σας ξεκινάει εδώ!
+Θέλετε να ξεχωρίσετε από τα τετρημένα; Είμαστε συνοδοιπόροι σε κάθε βήμα σας και σας οδηγούμε με ασφάλεια στο ψηφιακό κόσμο. Ας ανέβουμε στη κορυφή μαζί!
+
           </h2>
-        </div>
-      </section>
+  
+     </div>
+   </section>
+
+
 
       {/* SECTION 2 */}
       <section className=" relative width-full py-40 flex flex-row items-center justify-between">
@@ -66,8 +70,7 @@ export default function Home() {
           <h1
             className={`${sofia.className} text-gray-800 tracking-tighter md:text-5xl text-3xl  mb-5 font-extrabold `}
           >
-            Our creative digital agency designs and develops bespoke websites
-            with <span className="text-lime-600">three things in mind;</span>
+            Tο δημιουργικό ψηφιακό μας γραφείο με την εμπείρα του <span className="text-lime-600">προσφέρει ...</span>
           </h1>
         </div>
       </section>
