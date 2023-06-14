@@ -22,7 +22,7 @@ const ImageCard=(props)=> {
 >
  Our services
 </h1>
-<p className={`${sofia.className} text-white font-medium`}>We completely transformed the image of Bristol's finest coffee company.</p>
+<p className={`${sofia.className} text-white font-medium`}>We completely transformed the image of Bristol&apos;s finest coffee company.</p>
      </div>
      );
 }

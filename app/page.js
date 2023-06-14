@@ -65,9 +65,9 @@ export default async function Home() {
             Making brands a damn site better
           </h1>
           <h2>
-            Let’s face it, first impressions matter. Your website’s an
+            Let&apos;s face it, first impressions matter. Your website&apos;s an
             opportunity to wow your audience, so why waste it with bad design?
-            Because brands win new fans when they’re brave enough to go beyond
+            Because brands win new fans when they&apos;re brave enough to go beyond
             their creative comfort zone.
           </h2>
         </div>
