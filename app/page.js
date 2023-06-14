@@ -8,6 +8,7 @@ import MainButton from "@/components/MainButton";
 import ImageDistort from "@/components/imageDistort/imageDistort";
 import axios from "axios"
 
+
 const inter = Inter({ subsets: ["latin"] });
 
 const sofia = Sofia_Sans({ subsets: ["latin"] });
@@ -17,17 +18,15 @@ export const metadata = {
   description: "Technature company website",
 };
 
-async function getData(){
-  const res = await axios.get(`${process.env.NEXT_PUBLIC_URL}api/blog/getAll`)
-
-  return res.data
-}
 
 
 export default async function Home() {
 
-  const blogs=await getData()
-
+ 
+  const res = await fetch(`${process.env.NEXT_PUBLIC_URL}api/blog/getAll`,{
+    method: 'GET',
+  })
+  const blogs =await res.json()
 
   return (
     <main className={`${inter.className} `}>

@@ -15,15 +15,10 @@ export const metadata = {
   description: "Technature company website",
 };
 
-async function getData(){
-  const res = await axios.get(`${NEXT_PUBLIC_URL}api/blog/getAll`)
-
-  return res.data
-}
 
 export default async function Work() {
  
-  const blogs=await getData()
+
 
 
   return (
