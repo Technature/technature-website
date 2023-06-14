@@ -86,7 +86,7 @@ console.log(container)
       return (
             <div id="distortContainer" className="distortContainer ">
                   <div id="distortInner" className="distortInner w-[400px] h-[400px]">
-                        <Image src={src} fill={true}  style={{ objectFit: "contain" }}></Image>
+                        <Image alt="distort effect" src={src} fill={true}  style={{ objectFit: "contain" }}></Image>
                   </div>
             </div>
 
