@@ -119,8 +119,8 @@ export default async function Home() {
             Latest articles
           </h1>
           <div id="blogWrapper" className="w-[80%] flex flex-row justify-center items-start  flex-wrap mb-20">
-            {blogs.map((blogPost) => {
-              return <BlogCard title={blogPost.title} tags={blogPost.tags} photoPath={blogPost.pathName}></BlogCard>
+            {blogs.map((blogPost,idx) => {
+              return <BlogCard key={idx} title={blogPost.title} tags={blogPost.tags} photoPath={blogPost.pathName}></BlogCard>
             })}
 
           </div>

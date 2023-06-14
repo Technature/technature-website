@@ -6,12 +6,25 @@ import Socials from "@/components/Socials";
 import { useFormik } from "formik";
 import { debounce } from "lodash";
 import * as Yup from "yup";
+import axios from "axios"
+import Toaster from "@/components/Toaster/toaster";
 
 const inter = Inter({ subsets: ["latin"] });
 
 const sofia = Sofia_Sans({ subsets: ["latin"] });
 
 export default function Contact() {
+
+  //state for the toaster to open or close
+  const [open, setOpen] = useState(false);
+  const [toasterType, setToasterType] = useState("");
+
+  //function to pass as prop for toaster
+  const handleToaster=(type)=>{
+    setOpen(true)
+    setToasterType(type)
+  }
+  
   const formik = useFormik({
     initialValues: {
       firstName: "",
@@ -23,12 +36,12 @@ export default function Contact() {
     validationSchema: Yup.object().shape({
       from: Yup.string()
         .email("Η ηλεκτρονική διεύθυνση δεν είναι εγκυρή")
-        .required("Το πεδίο Email είναι υποχρεωρικό"),
-      firstName: Yup.string().required("Το πεδίο Όνομα είναι υποχρεωρικό"),
-      lastName: Yup.string().required("Το πεδίο Επώνυμο είναι υποχρεωρικό"),
+        .required("Το πεδίο Email είναι υποχρεωτικό"),
+      firstName: Yup.string().required("Το πεδίο Όνομα είναι υποχρεωτικό"),
+      lastName: Yup.string().required("Το πεδίο Επώνυμο είναι υποχρεωτικό"),
       message: Yup.string()
         .max(250)
-        .required("Το πεδίο Μήνυμα είναι υποχρεωρικό"),
+        .required("Το πεδίο Μήνυμα είναι υποχρεωτικό"),
     }),
 
     onSubmit: async (values) => {
@@ -39,24 +52,34 @@ export default function Contact() {
         message: values.message,
       };
       await axios
-        .post(`${CoreService.baseURL}/user/register`, form)
+        .post(`${process.env.NEXT_PUBLIC_URL}/api/sendForm`, form)
         .then((res) => {
-      
+          handleToaster("success")
+          formik.resetForm();
         })
         .catch((err) => {
-  
+          console.log(err)
+          handleToaster("error")
         });
     },
   });
 
+  //we use debounce from lodash to limmit the amount of clicks on submit button
+  const debounced = debounce(() => {
+
+    formik.submitForm()
+  
+}, 1000);
+
   const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log(formik.errors);
-    console.log("submit bro");
-    formik.submitForm();
+    e.preventDefault()
+  debounced();
   };
 
+
+
   useEffect(() => {
+   
     var global_r = 255;
     var global_g = 250;
     var global_b = 254;
@@ -179,7 +202,7 @@ export default function Contact() {
 
         <Socials color={"black"}></Socials>
       </div>
-
+<Toaster state={open} close={setOpen} type={toasterType}></Toaster>
       <form id="form" className="w-1/3   p-10 frostedGlass z-40">
         <div id="firstName-wrapper" className=" mb-6">
           <input
@@ -188,6 +211,7 @@ export default function Contact() {
             placeholder="Όνομα"
             type="text"
             onChange={formik.handleChange}
+            value={formik.values.firstName}
           ></input>
           <div className="h-[13px] w-full text-red-500">
             {formik.errors.firstName}
@@ -201,11 +225,13 @@ export default function Contact() {
             placeholder="Επώνυμο"
             type="text"
             onChange={formik.handleChange}
+            value={formik.values.lastName}
           ></input>
             <div className="h-[13px] w-full text-red-500">
             {formik.errors.lastName}
           </div>
         </div>
+
         <div id="email-wrapper" className=" mb-10">
           <input
             className="w-full border-zinc-400 border-b-2 bg-transparent "
@@ -213,17 +239,20 @@ export default function Contact() {
             placeholder="Email"
             type="email"
             onChange={formik.handleChange}
+            value={formik.values.from}
           ></input>
             <div className="h-[13px] w-full text-red-500">
             {formik.errors.from}
           </div>
         </div>
+
         <div id="text-area-wrapper" className=" mb-10">
           <textarea
             className="w-full border-zinc-400 border-2 bg-transparent "
             name="message"
             placeholder="Μήνυμα"
             onChange={formik.handleChange}
+            value={formik.values.message}
           ></textarea>
             <div className="h-[13px] w-full text-red-500">
             {formik.errors.message}

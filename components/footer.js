@@ -97,7 +97,7 @@ export default function Footer({}) {
 
       <div id="social" className="flex flex-col items-end">
         <p className="text-lime-600 font-extrabold mb-10">FOLLOW</p>
-        <div class="flex mb-6">
+        <div className="flex mb-6">
           <a href="/" target="_blank" rel="noopener noreferrer">
             <svg className="ml-4 " width="48" height="48" viewBox="0 0 48 48">
               <g

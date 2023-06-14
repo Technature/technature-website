@@ -2,7 +2,7 @@ import { Controller, animated, useSpring } from '@react-spring/web'
 
 export default function Socials({openModal,opened,color}) {
     
-console.log(`stroke-${color}`)
+
     return (
 
         <div className="flex mb-6">
@@ -20,7 +20,7 @@ console.log(`stroke-${color}`)
                 transform="translate(239 664)"
                 fill="#fff"
                 stroke="#878787"
-                stroke-width="1"
+                strokeWidth="1"
               >
                 <circle cx="24" cy="24" r="24" stroke="none"></circle>
                 <circle cx="24" cy="24" r="23.5" fill="none"></circle>

@@ -103,15 +103,10 @@ border: 1px solid rgba(255, 255, 255, 0.06);
 }
 
 /* DISTORT EFFECT FOR THE HERO IMAGE IN THE PAGES */
-
-
   
 .distortContainer {
-  /* This will come into play later */
+  /* the lower the number the bigger the distort */
   perspective: 5px;
-  
- 
-
 }
 
 .distortInner {

@@ -50,9 +50,9 @@ export default async function Blog() {
           <div id="gradient" className="absolute bottom-0 z-10 w-full h-1/2" style={{ background: "linear-gradient(0deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%)" }} ></div>
           <Image src={blogs[0].pathName} fill="true" className="object-cover" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"></Image>
           <div className={`absolute bottom-20 z-30 left-20 w-full`}>
-            {blogs[0].tags.map((tag) => {
+            {blogs[0].tags.map((tag,idx) => {
               return (
-                <span className={`text-lime-400 font-extrabold text-3xl mr-5 ${sofia.className} `}>{tag}</span>
+                <span key={idx} className={`text-lime-400 font-extrabold text-3xl mr-5 ${sofia.className} `}>{tag}</span>
 
               )
             })}

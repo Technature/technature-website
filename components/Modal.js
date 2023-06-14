@@ -45,7 +45,7 @@ export default function Modal({ openModal, opened }) {
         <ul className="font-extrabold text-neutral-200 text-6xl  ">
           {links.map((link,idx) => {
             return(
-            <li className={`mb-2 item${idx+1} ${opened ? "" : "slide"}`}  >
+            <li key={`${link.name}-${idx}`} className={`mb-2 item${idx+1} ${opened ? "" : "slide"}`}  >
             <Link className="text-black opacity-30 hover:text-white hover:opacity-100 " onClick={openModal} onMouseEnter={showServices(link.name)} href={link.href}>
             {link.name}
             </Link>
@@ -61,7 +61,7 @@ export default function Modal({ openModal, opened }) {
 
           {subLinks.map((subLink,idx)=>{
             return(
-              <li className={`mb-2 subItem${idx+1} ${opened && show ? "" : "slide"}`}>
+              <li key={`${subLink.name}-${idx}`} className={`mb-2 subItem${idx+1} ${opened && show ? "" : "slide"}`}>
             <Link className="text-black opacity-30 hover:text-white hover:opacity-100 " href={subLink.href}>
              {subLink.name}
             </Link>

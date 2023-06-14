@@ -1,5 +1,4 @@
 "use client"
-import styles from "./imageDistort.module.css"
 import Image from "next/image"
 import { useEffect } from 'react';
 
