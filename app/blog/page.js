@@ -5,6 +5,7 @@ import BlogCard from "@/components/BlogCard/BlogCard";
 import MainButton from "@/components/MainButton";
 import ImageCard from "@/components/ImageCard";
 import axios from "axios"
+import { blogPosts } from "@/helpers/dummyData";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,10 +20,8 @@ export const metadata = {
 
 export default async function Blog() {
  
-  const res = await fetch(`${process.env.NEXT_PUBLIC_URL}api/blog/getAll`,{
-    method: 'GET',
-  })
-  const blogs =await res.json()
+
+  const blogs =blogPosts
 
 
   return (

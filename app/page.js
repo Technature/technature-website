@@ -7,6 +7,7 @@ import BlogCard from "@/components/BlogCard/BlogCard";
 import MainButton from "@/components/MainButton";
 import ImageDistort from "@/components/imageDistort/imageDistort";
 import axios from "axios"
+import { blogPosts } from "@/helpers/dummyData";
 
 
 const inter = Inter({ subsets: ["latin"] });
@@ -23,10 +24,10 @@ export const metadata = {
 export default async function Home() {
 
  
-  const res = await fetch(`${process.env.NEXT_PUBLIC_URL}api/blog/getAll`,{
-    method: 'GET',
-  })
-  const blogs =await res.json()
+  // const res = await fetch(`${process.env.NEXT_PUBLIC_URL}api/blog/getAll`,{
+  //   method: 'GET',
+  // })
+  const blogs =blogPosts
 
   return (
     <main className={`${inter.className} `}>
