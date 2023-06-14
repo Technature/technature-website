@@ -16,7 +16,7 @@ export const metadata = {
 };
 
 async function getData(){
-  const res = await axios.get('http://localhost:3000/api/blog/getAll')
+  const res = await axios.get(`${process.env.NEXT_PUBLIC_URL}api/blog/getAll`)
 
   return res.data
 }
