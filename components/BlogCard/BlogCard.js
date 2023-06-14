@@ -24,7 +24,7 @@ const BlogCard = ({title,tags,photoPath}) => {
             <Link href="/">
 
                 <div id="imageWrapper" className="w-full h-[200px]  relative  overflow-hidden">
-                    <Image className={`${touched?imageGrow:image}`} src={photoPath} fill="true" style={{ objectFit: "cover" }}></Image>
+                    <Image  alt="blogPost"className={`${touched?imageGrow:image}`} src={photoPath} fill="true" style={{ objectFit: "cover" }}></Image>
                 </div>
 
 

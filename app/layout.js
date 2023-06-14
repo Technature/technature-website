@@ -29,7 +29,7 @@ export default function RootLayout({ children }) {
             setOpen(false)
           }}>
             <Link href="/">
-              <Image
+              <Image 
                 src="/logo2.png"
                 alt="technature logo"
                 height="60"

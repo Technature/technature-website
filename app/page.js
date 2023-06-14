@@ -56,7 +56,7 @@ export default async function Home() {
       {/* SECTION 2 */}
       <section className=" relative width-full py-40 flex flex-row items-center justify-between">
         <div className=" w-1/2 relative h-[50vw] ">
-          <Image src="/pic1.webp" fill={true}></Image>
+          <Image alt="section2pic" src="/pic1.webp" fill={true}></Image>
         </div>
         <div className=" w-1/3 mr-40">
           <h1
@@ -100,9 +100,9 @@ export default async function Home() {
         </h1>
 
         <div id="clientWrapper" className="w-3/5 flex flex-row">
-          <Image className="mr-4" src="/icare.png" width={150} height={100}></Image>
-          <Image className="mr-4" src="/icare.png" width={150} height={100}></Image>
-          <Image className="mr-4" src="/icare.png" width={150} height={100}></Image>
+          <Image alt="clients" className="mr-4" src="/icare.png" width={150} height={100}></Image>
+          <Image alt="clients" className="mr-4" src="/icare.png" width={150} height={100}></Image>
+          <Image alt="clients" className="mr-4" src="/icare.png" width={150} height={100}></Image>
         </div>
 
       </section>

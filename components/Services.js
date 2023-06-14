@@ -65,16 +65,19 @@ const  Services = ({sofia})=>{
             className={services == 1 ? "show" : "show close"}
             src="/pic1.webp"
             fill={true}
+            alt="services"
           ></Image>
           <Image
             className={services == 2 ? "show" : "show close"}
             src="/pic1.png"
             fill={true}
+            alt="services"
           ></Image>
           <Image
             className={services == 3 ? "show" : "show close"}
             src="/pic3.png"
             fill={true}
+            alt="services"
           ></Image>
         </div>
       </section>
