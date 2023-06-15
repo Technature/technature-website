@@ -25,31 +25,30 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={open ? "openModal" : ""}>
-      <div className="cursor-pointer m-7 fixed top-0 z-50" onClick={() => {
-            setOpen(false)
-          }}>
-            <Link href="/">
-              <Image 
-                src="/logo2.png"
-                alt="technature logo"
-                height="80"
-                width="80"
-              ></Image>
-            </Link>
+        <div className="cursor-pointer m-7 fixed top-0 z-50 w-[50px] h-[50px] md:w-[80px] md:h-[80px]" onClick={() => {
+          setOpen(false)
+        }}>
+          <Link href="/">
+            <Image
+              src="/logo2.png"
+              alt="technature logo"
+              fill="true"
+            ></Image>
+          </Link>
+        </div>
+
+
+        <nav className={`${sofia.className} text-2xl right-40 top-10 z-20 mr-5  fixed hidden md:flex md:flex-row`}>
+
+          <div className={"text-gray-800 hover:text-lime-600 font-extrabold mr-6  "}>
+            <Link href="/work">Work</Link>
           </div>
 
-  
-          <nav className={`${sofia.className} text-2xl right-40 top-10 z-20 mr-5  fixed hidden md:flex md:flex-row`}>
+          <div className="text-gray-800 hover:text-lime-600 font-extrabold">
+            <Link href="/contact">Contact </Link>
+          </div>
+        </nav>
 
-            <div className={"text-gray-800 hover:text-lime-600 font-extrabold mr-6  "}>
-              <Link href="/work">Work</Link>
-            </div>
-
-            <div className="text-gray-800 hover:text-lime-600 font-extrabold">
-              <Link href="/contact">Contact </Link>
-            </div>
-          </nav>
-   
         <Burger openModal={openModal} opened={open}></Burger>
 
         <Modal openModal={openModal} opened={open}></Modal>

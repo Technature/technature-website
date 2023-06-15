@@ -11,10 +11,10 @@ const  Services = ({sofia})=>{
     return(
         <>
          {/* SECTION 5 */}
-      <section className=" relative width-full py-40 flex flex-row items-center justify-center sectionGradient">
-        <div className=" w-1/3 mr-40">
+      <section className=" relative width-full py-40 flex flex-col md:flex-row items-center justify-center sectionGradient">
+        <div className=" w-full md:w-1/3 md:mr-40 text-center md:ml-10 md:text-start mb-20 md:md-0">
           <h1
-            className={`${sofia.className} text-white  md:text-1xl text-2xl  mb-5 font-semibold `}
+            className={`${sofia.className} text-white  md:text-1xl text-2xl  pb-5 font-semibold `}
           >
             Our services
           </h1>
@@ -60,7 +60,7 @@ const  Services = ({sofia})=>{
             VIEW ALL SERVICES
           </button>
         </div>
-        <div className=" w-1/3 relative h-[500px]  ">
+        <div className="w-[90%]  md:w-1/2 lg:w-1/3 relative  aspect-square   ">
           <Image
             className={services == 1 ? "show" : "show close"}
             src="/pic1.webp"

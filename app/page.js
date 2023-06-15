@@ -75,7 +75,7 @@ export default async function Home() {
 
       {/* SECTION 3 */}
      <section className=" relative width-full flex flex-row items-center justify-center">
-        <div className=" w-2/3 mr-40">
+        <div className=" w-2/3 md:mr-40">
           <h1
             className={`${sofia.className} text-gray-800 tracking-tighter md:text-5xl text-3xl  mb-5 font-extrabold `}
           >
@@ -85,17 +85,17 @@ export default async function Home() {
       </section>
 
       <ScrollGallery sofia={sofia}></ScrollGallery>
-{/* 
+ 
       <Services sofia={sofia}></Services>
 
-      <Gallery sofia={sofia}></Gallery> */}
+      <Gallery sofia={sofia}></Gallery> 
 
 
 
-      <section className=" relative w-full flex flex-col  pb-60 ">
+      <section className=" relative w-full flex flex-col items-center justify-center pb-60 ">
 
 
-        <div className=" w-full  flex flex-col  justify-start  ">
+        <div className=" relative w-full  flex flex-col items-center justify-start  ">
 
 
           <h1
@@ -103,7 +103,7 @@ export default async function Home() {
           >
             Latest articles
           </h1>
-          <div id="blogWrapper" className="w-[80%] flex flex-row justify-between items-start  flex-wrap mb-20">
+          <div id="blogWrapper" className="w-[80%] flex justify-center flex-wrap mb-20">
             {blogs.map((blogPost,idx) => {
               return <BlogCard key={idx} title={blogPost.title} tags={blogPost.tags} photoPath={blogPost.pathName}></BlogCard>
             })}

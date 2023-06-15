@@ -6,7 +6,7 @@ const  ScrollGallery = ({sofia})=>{
         <>
             {/* SECTION 4 */}
             <section className=" relative width-full flex flex-row items-center justify-start mt-40">
-        <div id="leftSide" className=" w-1/3 ml-40">
+        <div id="leftSide" className="w-1/2 md:w-1/3  ml-20 md:ml-40">
           <div className="mb-80">
             <div className="relative top-[33px] right-8 text-lime-600">01</div>
             <h1
