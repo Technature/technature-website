@@ -37,7 +37,7 @@ export default async function Home() {
      
      <ImageDistort src={"/home.png"}></ImageDistort>
     
-     <div className=" w-1/3 ml-40">
+     <div className=" w-[90%] md:w-1/2 sm:w-1/2 lg:w-1/3 sm:ml-5 md:ml-10 lg:ml-40 mt-10 sm:mt-0 text-center sm:text-start">
        <h1
          className={`${sofia.className} text-gray-800 tracking-tighter md:text-6xl text-4xl mb-5   font-extrabold`}
        >Δημιουργώντας ψηφιακές εμπειρίες
@@ -54,13 +54,13 @@ export default async function Home() {
 
 
       {/* SECTION 2 */}
-      <section className=" relative width-full py-40 flex flex-row items-center justify-between">
-        <div className=" w-1/2 relative h-[50vw] ">
-          <Image alt="section2pic" src="/pic1.webp" fill={true}></Image>
-        </div>
-        <div className=" w-1/3 mr-40">
+      <section className=" relative width-full py-40 flex flex-col md:flex-row  items-center justify-start">
+      <div id="image-wrapper" className="w-full md:w-1/2 aspect-square relative  mb-6">
+     <Image alt="section2pic" src="/pic1.webp" fill="true" className="object-cover "></Image>
+     </div>
+        <div className=" w-[90%] md:w-1/2 lg:w-1/3 md:m-[auto]  p-4 text-center md:text-start">
           <h1
-            className={`${sofia.className} text-gray-800 tracking-tighter md:text-5xl text-3xl  mb-5 font-extrabold `}
+            className={`${sofia.className} text-gray-800 tracking-tighter lg:text-7xl md:text-5xl text-6xl  mb-5 font-extrabold `}
           >
             Making brands a damn site better
           </h1>
@@ -74,7 +74,7 @@ export default async function Home() {
       </section>
 
       {/* SECTION 3 */}
-      <section className=" relative width-full flex flex-row items-center justify-center">
+     <section className=" relative width-full flex flex-row items-center justify-center">
         <div className=" w-2/3 mr-40">
           <h1
             className={`${sofia.className} text-gray-800 tracking-tighter md:text-5xl text-3xl  mb-5 font-extrabold `}
@@ -85,40 +85,25 @@ export default async function Home() {
       </section>
 
       <ScrollGallery sofia={sofia}></ScrollGallery>
-
+{/* 
       <Services sofia={sofia}></Services>
 
-      <Gallery sofia={sofia}></Gallery>
-
-      <section className=" relative width-full py-40 mb-40 flex flex-col items-center justify-center">
+      <Gallery sofia={sofia}></Gallery> */}
 
 
-        <h1
-          className={`${sofia.className} text-zinc-700 tracking-tighter md:text-5xl text-3xl  my-10 font-extrabold `}
-        >
-          Our Clients
-        </h1>
 
-        <div id="clientWrapper" className="w-3/5 flex flex-row">
-          <Image alt="clients" className="mr-4" src="/icare.png" width={150} height={100}></Image>
-          <Image alt="clients" className="mr-4" src="/icare.png" width={150} height={100}></Image>
-          <Image alt="clients" className="mr-4" src="/icare.png" width={150} height={100}></Image>
-        </div>
-
-      </section>
-
-      <section className=" relative w-full flex flex-col items-center justify-center pb-60 ">
+      <section className=" relative w-full flex flex-col  pb-60 ">
 
 
-        <div className=" relative w-full  flex flex-col items-center justify-start  m-[auto] ">
+        <div className=" w-full  flex flex-col  justify-start  ">
 
 
           <h1
-            className={`${sofia.className} text-zinc-700 tracking-tighter md:text-5xl text-3xl  my-10 font-extrabold w-2/3 `}
+            className={`${sofia.className} text-zinc-700 tracking-tighter md:text-5xl text-3xl  my-10 font-extrabold `}
           >
             Latest articles
           </h1>
-          <div id="blogWrapper" className="w-[80%] flex flex-row justify-center items-start  flex-wrap mb-20">
+          <div id="blogWrapper" className="w-[80%] flex flex-row justify-between items-start  flex-wrap mb-20">
             {blogs.map((blogPost,idx) => {
               return <BlogCard key={idx} title={blogPost.title} tags={blogPost.tags} photoPath={blogPost.pathName}></BlogCard>
             })}

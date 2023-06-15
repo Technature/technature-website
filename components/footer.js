@@ -7,9 +7,9 @@ const sofia = Sofia_Sans({ subsets: ["latin"] });
 export default function Footer({}) {
   return (
     <footer
-      className={`relative width-full p-20 bg-zinc-900 ${sofia.className} flex justify-start`}
+      className={`relative width-full p-20 bg-zinc-900 ${sofia.className} flex justify-center md:justify-start flex-col sm:flex-row`}
     >
-      <div className="w-1/5">
+      <div className="w-1/5 hidden md:block ">
         <ul className="font-extrabold text-neutral-200  ">
           <li>
             <Link className="hover:text-lime-600" href="/">
@@ -54,7 +54,7 @@ export default function Footer({}) {
         </ul>
       </div>
 
-      <div className="font-extrabold text-neutral-200 w-2/5 ">
+      <div className="font-extrabold text-neutral-200 w-2/5  hidden md:block ">
         <p className="text-lime-600">EXPERTS IN</p>
         <div>
           <ul>
@@ -82,7 +82,7 @@ export default function Footer({}) {
         </div>
       </div>
 
-      <div className="font-extrabold text-neutral-200 w-1/5 ">
+      <div className="font-extrabold text-neutral-200 w-1/5  hidden md:block ">
         <p className="text-lime-600">OFFICE</p>
         <div>
           <ul>
@@ -95,7 +95,7 @@ export default function Footer({}) {
         </div>
       </div>
 
-      <div id="social" className="flex flex-col items-end">
+      <div id="social" className="flex flex-col  items-center md:items-end">
         <p className="text-lime-600 font-extrabold mb-10">FOLLOW</p>
         <div className="flex mb-6">
           <a href="/" target="_blank" rel="noopener noreferrer">

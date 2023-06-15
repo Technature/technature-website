@@ -20,7 +20,7 @@ const BlogCard = ({title,tags,photoPath}) => {
     return (
         <>
          
-            <div className={`w-[25%] min-w-[250px] min-h-[300px]  relative mx-[1%] border-2 border-black cursor-pointer ${sofia.className}`} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseEnter}>
+            <div className={`w-[300px] min-w-[250px] min-h-[300px]  relative mx-[1%] border-2 border-black cursor-pointer ${sofia.className}`} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseEnter}>
             <Link href="/">
 
                 <div id="imageWrapper" className="w-full h-[200px]  relative  overflow-hidden">
