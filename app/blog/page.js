@@ -21,7 +21,12 @@ export const metadata = {
 export default async function Blog() {
  
 
-  const blogs =blogPosts
+  const blogs=await axios.get(`${process.env.NEXT_PUBLIC_URL}/blog/getAll`).then((res)=>{
+return res.data
+  }).catch((err)=>{
+    console.log(err)
+  })
+
 
 
   return (
