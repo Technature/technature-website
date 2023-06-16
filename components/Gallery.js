@@ -20,9 +20,9 @@ const  Gallery = ({sofia})=>{
         </div>
       </div>
       
-                <div id="imageGallery" className="w-full flex justify-center items-center flex-col md:flex-row mt-20">
+                <div id="imageGallery" className="w-full flex justify-center items-center flex-col md:flex-row md:mt-20">
                 
-                   <div id="image-card-wrapper" className="w-[80%] md:w-1/3   mt-8">
+                   <div id="image-card-wrapper" className="w-[80%] md:w-1/3   mt-60">
                    <ImageCard src={"/pic1.webp"}></ImageCard>
                 </div>
 

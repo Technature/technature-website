@@ -20,11 +20,11 @@ export default function Contact() {
   const [toasterType, setToasterType] = useState("");
 
   //function to pass as prop for toaster
-  const handleToaster=(type)=>{
+  const handleToaster = (type) => {
     setOpen(true)
     setToasterType(type)
   }
-  
+
   const formik = useFormik({
     initialValues: {
       firstName: "",
@@ -68,18 +68,18 @@ export default function Contact() {
   const debounced = debounce(() => {
 
     formik.submitForm()
-  
-}, 1000);
+
+  }, 1000);
 
   const handleSubmit = (e) => {
     e.preventDefault()
-  debounced();
+    debounced();
   };
 
 
 
   useEffect(() => {
-   
+
     var global_r = 255;
     var global_g = 250;
     var global_b = 254;
@@ -188,22 +188,30 @@ export default function Contact() {
 
   return (
     <div
-      className={`min-h-screen ${sofia.className} flex justify-start items-center cursor-crosshair `}
+      className={`min-h-screen ${sofia.className} flex flex-col md:flex-row justify-start items-center cursor-crosshair `}
     >
-      <canvas id="mousetrail" className="absolute z-10 w-full"></canvas>
-      <div className="w-1/3 ml-40 z-40">
-        <h2 className="text-lime-600 text-6xl font-extrabold mb-10">Marousi</h2>
-        <h3 className="text-zinc-700 text-xl font-extrabold">Technature</h3>
-        <h3 className="text-zinc-700 text-xl font-extrabold">Panathineon 9</h3>
-        <h3 className="text-zinc-700 text-xl font-extrabold mb-5">Marousi</h3>
-        <h3 className="text-lime-600 text-xl font-extrabold mb-20">
-          +30 210 806 4614
-        </h3>
+      <canvas id="mousetrail" className="absolute z-10 w-full hidden md:block "></canvas>
 
-        <Socials color={"black"}></Socials>
+      <div className="w-full md:w-1/3 md:ml-40 z-40 flex flex-col sm:flex-row  md:flex-col justify-evenly items-center  mt-40 md:mt-0">
+        <div>
+          <h2 className="text-lime-600 text-6xl font-extrabold mb-5 sm:mb-10">Marousi</h2>
+          <h3 className="text-zinc-700 text-xl font-extrabold">Technature</h3>
+          <h3 className="text-zinc-700 text-xl font-extrabold">Panathineon 9</h3>
+          <h3 className="text-zinc-700 text-xl font-extrabold md:mb-5">Marousi</h3>
+        </div>
+
+        <div>
+          <h3 className="text-lime-600 text-xl font-extrabold mb-3 md:mb-20">
+            +30 210 806 4614
+          </h3>
+          <Socials color={"black"}></Socials>
+        </div>
+
       </div>
-<Toaster state={open} close={setOpen} type={toasterType}></Toaster>
-      <form id="form" className="w-1/3   p-10 frostedGlass z-40">
+
+      <Toaster state={open} close={setOpen} type={toasterType}></Toaster>
+
+      <form id="form" className="w-full md:w-1/3   p-10 frostedGlass z-40">
         <div id="firstName-wrapper" className=" mb-6">
           <input
             className="w-full border-zinc-400 border-b-2 bg-transparent"
@@ -227,7 +235,7 @@ export default function Contact() {
             onChange={formik.handleChange}
             value={formik.values.lastName}
           ></input>
-            <div className="h-[13px] w-full text-red-500">
+          <div className="h-[13px] w-full text-red-500">
             {formik.errors.lastName}
           </div>
         </div>
@@ -241,7 +249,7 @@ export default function Contact() {
             onChange={formik.handleChange}
             value={formik.values.from}
           ></input>
-            <div className="h-[13px] w-full text-red-500">
+          <div className="h-[13px] w-full text-red-500">
             {formik.errors.from}
           </div>
         </div>
@@ -254,7 +262,7 @@ export default function Contact() {
             onChange={formik.handleChange}
             value={formik.values.message}
           ></textarea>
-            <div className="h-[13px] w-full text-red-500">
+          <div className="h-[13px] w-full text-red-500">
             {formik.errors.message}
           </div>
         </div>

@@ -41,7 +41,7 @@ export default function Modal({ openModal, opened }) {
         }`}
     >
 
-      <div className='w-1/4 ml-60'>
+      <div className='w-1/2 md:w-1/4  ml-10 md:ml-60'>
         <ul className="font-extrabold text-neutral-200 text-6xl  ">
           {links.map((link,idx) => {
             return(
