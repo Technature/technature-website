@@ -5,6 +5,7 @@ import React, { useState, useEffect } from 'react';
 import styles from "./blogcard.module.css"
 import Link from "next/link";
 
+
 const{image,imageGrow,blogTag,blogTagHover,blogDescr,blogDescrHover,bg,bgHover}=styles
 
 const sofia = Sofia_Sans({ subsets: ["latin"] });
@@ -20,23 +21,23 @@ const BlogCard = ({title,tags,photoPath}) => {
     return (
         <>
          
-            <div className={`w-[300px] min-w-[250px] min-h-[300px]  relative border-[1px] border-black cursor-pointer ${sofia.className}`} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseEnter}>
-            <Link href="/">
+           
+            <Link href="/"  className={`w-full sm:w-[46%] lg:w-[30%]  relative border-[1px] border-black cursor-pointer mb-10 ${sofia.className} ${touched?bgHover:bg} `} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseEnter}>
 
-                <div id="imageWrapper" className="w-full h-[200px] basis-2/6  relative  overflow-hidden">
+                <div id="imageWrapper" className=" w-full  h-[150px] md:h-[200px] lg:h-[250px]   relative  overflow-hidden">
                     <Image  alt="blogPost"className={`${touched?imageGrow:image}`} src={photoPath} fill="true" style={{ objectFit: "cover" }}></Image>
                 </div>
 
 
-                <div id="description" className={`p-5 ${touched?bgHover:bg}`}>
+                <div id="description" className={`p-5 `}>
                     {tags.map((tag,idx)=>{
                         return   <span key={`${idx}-${tag}`} className={`text-xs font-bold tracking-wider mb-3 mr-2 ${touched?blogTagHover:blogTag}`}>{tag}</span>
                     })}
                   
-                    <p className={` sm:text-xl md:text-xl  lg:text-[1.8rem] font-extrabold ${touched?blogDescrHover:blogDescr} `}>{title}</p>
+                    <p className={`text-xl sm:text-xl md:text-xl  lg:text-[1.8rem] mt-3 font-extrabold ${touched?blogDescrHover:blogDescr} `}>{title}</p>
                 </div>
                 </Link>
-            </div>
+           
           
         </>
     )

@@ -12,7 +12,7 @@ const ImageCard=(props)=> {
 
 
     return ( 
-        <div id="imageCard" className="   m-6">
+        <div id="imageCard" className=" m-3 md:m-6">
         <div id="image-wrapper" className="w-full relative pt-[100%]  mb-6">
      <Image alt="imagecard" src={props.src} fill="true" className="w-full h-full top-0 left-0 object-cover"></Image>
      </div>

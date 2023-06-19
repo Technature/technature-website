@@ -9,9 +9,6 @@ function ImageDistort({src}) {
             var container = document.getElementById('distortContainer');
             var inner = document.getElementById('distortInner');
 
-            console.log(container)
-            console.log(inner)
-
             var onMouseEnterHandler = function (event) {
                   update(event);
             };
@@ -23,7 +20,7 @@ function ImageDistort({src}) {
                         update(event);
                   }
             };
-console.log(container)
+
             container.onmouseenter = onMouseEnterHandler;
             container.onmouseleave = onMouseLeaveHandler;
             container.onmousemove = onMouseMoveHandler;
