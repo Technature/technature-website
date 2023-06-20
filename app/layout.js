@@ -30,7 +30,7 @@ export default function RootLayout({ children }) {
         }}>
           <Link href="/">
             <Image
-              src="/logo2.png"
+              src="/logo4.png"
               alt="technature logo"
               fill="true"
             ></Image>
@@ -38,13 +38,13 @@ export default function RootLayout({ children }) {
         </div>
 
 
-        <nav className={`${sofia.className} text-2xl right-40 top-10 z-20 mr-5  fixed hidden md:flex md:flex-row`}>
+        <nav className={`${sofia.className} text-md right-28 top-10 z-20   fixed hidden md:flex md:flex-row  mix-blend-exclusion`}>
 
-          <div className={"text-gray-800 hover:text-lime-600 font-extrabold mr-6  "}>
-            <Link href="/work">Work</Link>
+          <div className={"text-white hover:text-violet-600 font-extrabold tracking-wider mr-6 "}>
+            <Link href="/services">Services</Link>
           </div>
 
-          <div className="text-gray-800 hover:text-lime-600 font-extrabold">
+          <div className="text-white hover:text-violet-600 font-extrabold tracking-wider">
             <Link href="/contact">Contact </Link>
           </div>
         </nav>

@@ -1,7 +1,6 @@
 import Image from "next/image";
 import { Inter, Sofia_Sans, Prompt } from "next/font/google";
 import ImageDistort from "@/components/imageDistort/imageDistort";
-import BlogCard from "@/components/BlogCard/BlogCard";
 import MainButton from "@/components/MainButton";
 import ImageCard from "@/components/ImageCard";
 import axios from "axios"

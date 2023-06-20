@@ -3,7 +3,7 @@ import { Inter, Sofia_Sans, Prompt } from "next/font/google";
 import Services from "@/components/Services";
 import Gallery from "@/components/Gallery"
 import ScrollGallery from "@/components/ScrollGallery";
-import BlogCard from "@/components/BlogCard/BlogCard";
+import BlogCardForBlogPage from "@/components/BlogCard/BlogCardForBlogPage";
 import MainButton from "@/components/MainButton";
 import ImageDistort from "@/components/imageDistort/imageDistort";
 import axios from "axios"
@@ -27,7 +27,11 @@ export default async function Home() {
   // const res = await fetch(`${process.env.NEXT_PUBLIC_URL}api/blog/getAll`,{
   //   method: 'GET',
   // })
-  const blogs =blogPosts
+  const blogs = await axios.get(`${process.env.NEXT_PUBLIC_URL}/blog/getAll`).then((res) => {
+    return res.data
+  }).catch((err) => {
+    console.log(err)
+  })
 
   return (
     <main className={`${inter.className} `}>
@@ -104,8 +108,8 @@ export default async function Home() {
             Latest articles
           </h1>
           <div id="blogWrapper" className="w-[80%] flex justify-center gap-4 flex-wrap mb-20">
-            {blogs.map((blogPost,idx) => {
-              return <BlogCard key={idx} title={blogPost.title} tags={blogPost.tags} photoPath={blogPost.pathName}></BlogCard>
+            {blogs.slice(0, 3).map((blog,idx) => {
+              return <BlogCardForBlogPage id={blog._id} key={idx} title={blog.title} tags={blog.tags} photoPath={blog.pathName}></BlogCardForBlogPage>
             })}
 
           </div>

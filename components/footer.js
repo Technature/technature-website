@@ -17,11 +17,6 @@ export default function Footer({}) {
             </Link>
           </li>
           <li>
-            <Link className="hover:text-lime-600" href="/work">
-              Work
-            </Link>
-          </li>
-          <li>
             <Link className="hover:text-lime-600" href="/services">
               Services
             </Link>
@@ -47,7 +42,7 @@ export default function Footer({}) {
             </Link>
           </li>
           <li>
-            <Link className="hover:text-lime-600" href="/privacy-policy-2">
+            <Link className="hover:text-lime-600" href="/privacy-policy">
               Privacy Policy
             </Link>
           </li>
@@ -59,23 +54,33 @@ export default function Footer({}) {
         <div>
           <ul>
             <li>
-              <Link className="hover:text-lime-600" href="/">
-                Hospitality{" "}
+              <Link className="hover:text-lime-600" href="/services">
+              SEO
               </Link>
             </li>
             <li>
-              <Link className="hover:text-lime-600" href="/">
-                Property and Architecture{" "}
+              <Link className="hover:text-lime-600" href="/services">
+              Paid Advertising -PPC
               </Link>
             </li>
             <li>
-              <Link className="hover:text-lime-600" href="/">
-                Film and Television{" "}
+              <Link className="hover:text-lime-600" href="/services">
+              Content Marketing
               </Link>
             </li>
             <li>
-              <Link className="hover:text-lime-600" href="/">
-                Business to Business{" "}
+              <Link className="hover:text-lime-600" href="/services">
+              Social Media
+              </Link>
+            </li>
+            <li>
+              <Link className="hover:text-lime-600" href="/services">
+              Branding + Design
+              </Link>
+            </li>
+            <li>
+              <Link className="hover:text-lime-600" href="/services">
+              Video+ Photography
               </Link>
             </li>
           </ul>
@@ -87,8 +92,8 @@ export default function Footer({}) {
         <div>
           <ul>
             <li>
-              <Link className="hover:text-lime-600" href="/">
-                Marousi{" "}
+              <Link className="hover:text-lime-600" href="/contact">
+                Marousi
               </Link>
             </li>
           </ul>
@@ -270,7 +275,7 @@ export default function Footer({}) {
         <p className="text-neutral-200 font-extrabold mb-5 hover:text-lime-600 cursor-pointer">
           Sign up to our newsletter
         </p>
-        <a href = "mailto: info@technature.gr" className="text-neutral-200 font-extrabold mb-5 text-3xl hover:text-lime-600 cursor-pointer">
+        <a href = "mailto: info@technature.gr" className="text-neutral-200 font-extrabold mb-5 text-xl sm:text-2xl hover:text-lime-600 cursor-pointer">
           info@technature.gr
         </a>
       </div>

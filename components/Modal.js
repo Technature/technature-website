@@ -6,9 +6,10 @@ import Socials from './Socials';
 
 
 const links = [
-  { href: "/work", name: "Work" },
+
   { href: "/services", name: "Services" },
-  { href: "/agency", name: "Agency" },
+  // { href: "/agency", name: "Agency" },
+  { href: "/careers", name: "Careers" },
   { href: "/blog", name: "Blog" },
   { href: "/contact", name: "Contact" }
 ]
@@ -32,7 +33,7 @@ export default function Modal({ openModal, opened }) {
   }
 
 
-
+// onMouseEnter={showServices(link.name)} 
   return (
 
     <div
@@ -46,7 +47,7 @@ export default function Modal({ openModal, opened }) {
           {links.map((link,idx) => {
             return(
             <li key={`${link.name}-${idx}`} className={`mb-2 item${idx+1} ${opened ? "" : "slide"}`}  >
-            <Link className="text-black opacity-30 hover:text-white hover:opacity-100 " onClick={openModal} onMouseEnter={showServices(link.name)} href={link.href}>
+            <Link className="text-black opacity-30 hover:text-white hover:opacity-100 " onClick={openModal}href={link.href}>
             {link.name}
             </Link>
           </li>

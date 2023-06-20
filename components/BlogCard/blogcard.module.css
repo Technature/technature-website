@@ -23,6 +23,11 @@
     color:white
   }
 
+  .blogDescrHoverVariant{
+    transition: color 0.5s;
+    color:rgb(101 163 13);
+  }
+
   .blogTag{
     color:rgb(101 163 13);
     transition:color 0.5s;

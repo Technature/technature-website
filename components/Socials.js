@@ -53,7 +53,7 @@ export default function Socials({openModal,opened,color}) {
                 transform="translate(300 664)"
                 fill="#fff"
                 stroke="#878787"
-                stroke-width="1"
+                strokeWidth="1"
               >
                 <ellipse
                   cx="23"
@@ -127,7 +127,7 @@ export default function Socials({openModal,opened,color}) {
                 transform="translate(360 664)"
                 fill="#fff"
                 stroke="#878787"
-                stroke-width="1"
+                strokeWidth="1"
               >
                 <ellipse
                   cx="23.5"

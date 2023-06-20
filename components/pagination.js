@@ -33,7 +33,7 @@ export default function Pagination({ postsPerPage, totalPosts,active,setActive,i
                           {
                             idx==active?
                             <div
-                            key={idx}
+                            key={"qwefd"+idx}
                             divria-current="page"
                             className="relative z-10 inline-flex items-center bg-indigo-600 px-4 py-2 text-sm font-semibold text-white focus:z-20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                         >
@@ -42,7 +42,7 @@ export default function Pagination({ postsPerPage, totalPosts,active,setActive,i
                             :
                             <div
                             onClick={setActive(idx)}
-                            key={idx}
+                            key={"vdrfsgbre"+idx}
                             divria-current="page"
                             className=" cursor-pointer relative items-center px-4 py-2 text-sm font-semibold text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0 md:inline-flex"
                         >

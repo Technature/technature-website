@@ -61,7 +61,7 @@ export default async function Blog() {
           <div className={`absolute bottom-5 md:bottom-20 z-30 left-5 md:left-20`}>
             {blogs[0].tags.map((tag, idx) => {
               return (
-                <span key={idx} className={`text-lime-400 font-extrabold text-sm md:text-xl mr-5 ${sofia.className} `}>{tag}</span>
+                <span key={idx} className={`uppercase text-lime-400 font-extrabold text-sm md:text-xl mr-5 ${sofia.className} `}>{tag}</span>
 
               )
             })}
@@ -75,7 +75,7 @@ export default async function Blog() {
 
 
       <section id="blog-posts">
-            <BlogPosts blogs={blogs} tags={tags}></BlogPosts>
+            <BlogPosts blogs={blogs} tags={tags} ></BlogPosts>
       </section>
 
     </main>
