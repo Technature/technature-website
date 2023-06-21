@@ -30,6 +30,23 @@ body.openModal {
 
 }
 
+.accordion.close{
+  display: flex;
+  flex-direction: column;
+  height: 0px;
+  max-height: 0px;
+  opacity: 0;
+  overflow: hidden;
+  transition: all 2s;
+}
+
+.accordion{
+  opacity: 1; 
+
+  max-height: none; /* important for animation */
+  transition: all 2s;
+}
+
 .hideMain{
   opacity:1;
   transition: opacity 2s;
@@ -49,6 +66,18 @@ body.openModal {
   opacity:0;
   transition: opacity 0.3s;
 }
+
+
+.open{
+  opacity:1;
+  transition: opacity 2s;
+}
+
+.hide{
+  opacity:0;
+  transition: opacity 0.3s;
+}
+
 
 
 .modalAnimation {
