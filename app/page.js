@@ -23,7 +23,7 @@ export const metadata = {
 
 export default async function Home() {
 
- 
+
   // const res = await fetch(`${process.env.NEXT_PUBLIC_URL}api/blog/getAll`,{
   //   method: 'GET',
   // })
@@ -38,89 +38,91 @@ export default async function Home() {
 
       {/* SECTION 1 */}
       <section className=" h-[100vh] relative width-full  flex items-center justify-center flex-col sm:flex-row ">
-     
-     <ImageDistort src={"/home.png"}></ImageDistort>
-    
-     <div className=" w-[90%] md:w-1/2 sm:w-1/2 lg:w-1/3 sm:ml-5 md:ml-10 lg:ml-40 mt-10 sm:mt-0 text-center sm:text-start">
-       <h1
-         className={`${sofia.className} text-gray-800 tracking-tighter md:text-6xl text-4xl mb-5   font-extrabold`}
-       >Δημιουργώντας ψηφιακές εμπειρίες
-       </h1>
-       <h2>
-       Ένα όμορφο ταξίδι προς την ανάπτυξη του brand σας ξεκινάει εδώ!
-Θέλετε να ξεχωρίσετε από τα τετρημένα; Είμαστε συνοδοιπόροι σε κάθε βήμα σας και σας οδηγούμε με ασφάλεια στο ψηφιακό κόσμο. Ας ανέβουμε στη κορυφή μαζί!
+
+        <ImageDistort src={"/home.png"}></ImageDistort>
+
+        <div className=" w-[90%] md:w-1/2 sm:w-1/2 lg:w-1/3 sm:ml-5 md:ml-10 lg:ml-40 mt-10 sm:mt-0 text-center sm:text-start">
+          <h1
+            className={`${sofia.className} text-gray-800 tracking-tighter md:text-6xl text-4xl mb-5   font-extrabold`}
+          >Δημιουργώντας ψηφιακές εμπειρίες
+          </h1>
+          <h2>
+            Ένα όμορφο ταξίδι προς την ανάπτυξη του brand σας ξεκινάει εδώ!
+            Θέλετε να ξεχωρίσετε από τα τετρημένα; Είμαστε συνοδοιπόροι σε κάθε βήμα σας και σας οδηγούμε με ασφάλεια στο ψηφιακό κόσμο. Ας ανέβουμε στη κορυφή μαζί!
 
           </h2>
-  
-     </div>
-   </section>
+
+        </div>
+      </section>
 
 
 
       {/* SECTION 2 */}
       <section className=" relative width-full py-40 flex flex-col md:flex-row  items-center justify-start">
-      <div id="image-wrapper" className="w-full md:w-1/2 aspect-square relative  mb-6">
-     <Image alt="section2pic" src="/pic1.webp" fill="true" className="object-cover "></Image>
-     </div>
-        <div className=" w-[90%] md:w-1/2 lg:w-1/3 md:m-[auto]  p-4 text-center md:text-start">
-          <h1
-            className={`${sofia.className} text-gray-800 tracking-tighter lg:text-7xl md:text-5xl text-6xl  mb-5 font-extrabold `}
-          >
-            Making brands a damn site better
-          </h1>
-          <h2>
-            Let&apos;s face it, first impressions matter. Your website&apos;s an
-            opportunity to wow your audience, so why waste it with bad design?
-            Because brands win new fans when they&apos;re brave enough to go beyond
-            their creative comfort zone.
-          </h2>
-        </div>
-      </section>
+        <div id="image-wrapper" className="w-full md:w-1/2 aspect-square relative  mb-6">
+          <video style={{objectFit: "cover",width:"100%",height:"100%"}} autoplay="true"  muted loop>
+          <source src="meeting2.mp4" type="video/mp4" />
+              </video>
+            </div>
+            <div className=" w-[90%] md:w-1/2 lg:w-1/3 md:m-[auto]  p-4 text-center md:text-start">
+              <h1
+                className={`${sofia.className} text-gray-800 tracking-tighter lg:text-7xl md:text-5xl text-6xl  mb-5 font-extrabold `}
+              >
+                Making brands a damn site better
+              </h1>
+              <h2>
+                Let&apos;s face it, first impressions matter. Your website&apos;s an
+                opportunity to wow your audience, so why waste it with bad design?
+                Because brands win new fans when they&apos;re brave enough to go beyond
+                their creative comfort zone.
+              </h2>
+            </div>
+          </section>
 
-      {/* SECTION 3 */}
-     <section className=" relative width-full flex flex-row items-center justify-center">
-        <div className=" w-2/3 md:mr-40">
-          <h1
-            className={`${sofia.className} text-gray-800 tracking-tighter md:text-5xl text-3xl  mb-5 font-extrabold `}
-          >
-            Tο δημιουργικό ψηφιακό μας γραφείο με την εμπείρα του <span className="text-lime-600">προσφέρει ...</span>
-          </h1>
-        </div>
-      </section>
+          {/* SECTION 3 */}
+          <section className=" relative width-full flex flex-row items-center justify-center">
+            <div className=" w-2/3 md:mr-40">
+              <h1
+                className={`${sofia.className} text-gray-800 tracking-tighter md:text-5xl text-3xl  mb-5 font-extrabold `}
+              >
+                Tο δημιουργικό ψηφιακό μας γραφείο με την εμπείρα του <span className="text-lime-600">προσφέρει ...</span>
+              </h1>
+            </div>
+          </section>
 
-      <ScrollGallery sofia={sofia}></ScrollGallery>
- 
-      <Services sofia={sofia}></Services>
+          <ScrollGallery sofia={sofia}></ScrollGallery>
 
-      <Gallery sofia={sofia}></Gallery> 
+          <Services sofia={sofia}></Services>
 
-
-
-      <section className=" relative w-full flex flex-col items-center justify-center pb-60 ">
+          <Gallery sofia={sofia}></Gallery>
 
 
-        <div className=" relative w-full  flex flex-col items-center justify-start  ">
+
+          <section className=" relative w-full flex flex-col items-center justify-center pb-60 ">
 
 
-          <h1
-            className={`${sofia.className} text-zinc-700 tracking-tighter md:text-5xl text-3xl  my-10 font-extrabold `}
-          >
-            Latest articles
-          </h1>
-          <div id="blogWrapper" className="w-[80%] flex justify-center gap-4 flex-wrap mb-20">
-            {blogs.slice(0, 3).map((blog,idx) => {
-              return <BlogCardForBlogPage id={blog._id} key={idx} title={blog.title} tags={blog.tags} photoPath={blog.pathName}></BlogCardForBlogPage>
-            })}
-
-          </div>
-
-          <MainButton href={"/blog"}>VIEW ALL BLOG POSTS</MainButton>
+            <div className=" relative w-full  flex flex-col items-center justify-start  ">
 
 
-        </div>
-      </section>
+              <h1
+                className={`${sofia.className} text-zinc-700 tracking-tighter md:text-5xl text-3xl  my-10 font-extrabold `}
+              >
+                Latest articles
+              </h1>
+              <div id="blogWrapper" className="w-[80%] flex justify-center gap-4 flex-wrap mb-20">
+                {blogs.slice(0, 3).map((blog, idx) => {
+                  return <BlogCardForBlogPage id={blog._id} key={idx} title={blog.title} tags={blog.tags} photoPath={blog.pathName}></BlogCardForBlogPage>
+                })}
+
+              </div>
+
+              <MainButton href={"/blog"}>VIEW ALL BLOG POSTS</MainButton>
 
 
-    </main>
-  );
+            </div>
+          </section>
+
+
+        </main>
+        );
 }

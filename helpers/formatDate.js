@@ -1,6 +1,7 @@
 
 export default function formatDate(dateString){
 
+  if(!dateString) return "Dates are over estimated :D"
 // Create a Date object from the input string
 const dateObj = new Date(dateString);
 

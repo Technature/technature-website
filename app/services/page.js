@@ -26,15 +26,28 @@ function ServicesPage() {
             Content Marketing, Social Meida, Branding + Design, Video &
             Photography.
           </h2>
+
+          <ul className="grid grid-rows-3 grid-cols-3 mt-10 gap-2 font-bold">
+            {servicesArray.map((service)=>{
+              return(
+                <li >
+                <a className="hover:text-lime-600" href={`#${service.title}`}>
+                <span className="text-blue-600">{`> `}</span>{`${service.title.substring(0, 17)}`}
+                </a>
+              </li>
+              )
+            })}
+        
+          </ul>
         </div>
       </section>
 
       {/* SECTION 4 */}
-      <section className=" relative width-full flex flex-col items-center justify-start mt-5 sm:mt-20">
-        <div id="leftSide" className="w-full  p-5 sm:p-20">
+      <section className=" relative width-full flex flex-col items-center justify-start mt-5 sm:mt-10">
+        <div id="leftSide" className="w-full  px-5 sm:px-20">
           {servicesArray.map((service, idx) => {
             return (
-              <div className="flex flex-col lg:flex-row justify-between items-start w-full mb-40">
+              <div id={`${service.title}`} className="flex flex-col lg:flex-row justify-between items-center w-full mb-40">
                 <article
                   className="w-full lg:w-[40%] mb-10 lg:mb-0"
                   key={service.title + idx}

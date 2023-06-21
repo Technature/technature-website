@@ -74,7 +74,7 @@ function CareersPage() {
         <h2 className={`${sofia.className} w-2/3 mt-10 text-md text-white`}>
           Αν πιστεύετε ότι θα ταιριάζετε στο ύφος και τις αξίες μας και ότι θα
           ήσασταν μια σπουδαία προσθήκη στην Technature, στείλτε μας το
-          βιογραφικό σας στο info@technature.gr. Τα κοιτάμε όλα με την
+          βιογραφικό σας στο <a href="mailtio:info@technature.gr" className="text-lime-600 font-bold tracking-wide hover:text-lime-400">info@technature.gr</a>. Τα κοιτάμε όλα με την
           απαιτούμενη προσοχή.
           <span className="text-rose-200">
             {" "}
@@ -89,67 +89,67 @@ function CareersPage() {
         </h2>
 
         <h1
-            className={`${sofia.className} text-white tracking-tighter lg:text-4xl text-xl mt-10 mb-5 font-extrabold w-full `}
-          >
- <span className="text-blue-600"> Τρέχουσες </span>κενές θέσεις εργασίας.
+          className={`${sofia.className} text-white tracking-tighter lg:text-4xl text-xl mt-20 mb-5 font-extrabold w-full `}
+        >
+          Τρέχουσες κενές θέσεις εργασίας.
 
-          </h1>
+        </h1>
 
-          <ul className={`${sofia.className} text-white  lg:text-xl text-xl font-bold w-full ml-10`}>
-            <a href="mailto:info@technature.gr">
+        <ul className={`${sofia.className} text-white  lg:text-xl text-xl font-bold w-full ml-10`}>
+          <a href="mailto:info@technature.gr">
             <li className="hover:text-lime-600 mb-4">
-            Graphic Designer
+             - Graphic Designer
             </li>
-            </a>
-            <a href="mailto:info@technature.gr">
+          </a>
+          <a href="mailto:info@technature.gr">
             <li className="hover:text-lime-600 mb-4">
-            Web Developer
+            -  Web Developer
             </li>
-            </a>
-            <a href="mailto:info@technature.gr">
+          </a>
+          <a href="mailto:info@technature.gr">
             <li className="hover:text-lime-600 mb-4">
-            Digital Content specialst
+            -  Digital Content specialst
             </li>
-            </a>
-          </ul>
+          </a>
+        </ul>
 
       </section>
 
       <section
-          className={`${sofia.className} w-full flex flex-col  items-center  bg-gradient-to-r from-cyan-400 to-blue-700 p-10 lg:p-20 xl:p-40`}
+        className={`${sofia.className} w-full flex flex-col  items-center  bg-gradient-to-r from-cyan-400 to-blue-700 p-10 lg:p-20 xl:p-40`}
+      >
+
+        <h1
+          className={`${sofia.className} text-white lg:text-4xl text-xl mt-10 mb-5 font-extrabold w-full `}
         >
-  
-  <h1
-            className={`${sofia.className} text-white lg:text-4xl text-xl mt-10 mb-5 font-extrabold w-full `}
-          >
- Καθ' όλη τη διάρκεια του έτους, ανοίγουμε θέσεις εργασίας:
+          Καθ' όλη τη διάρκεια του έτους, ανοίγουμε θέσεις εργασίας:
 
-          </h1>
+        </h1>
 
-          <ul className={`${sofia.className}  lg:text-2xl text-xl  w-full ml-10`}>
-       
-            <li className="  mb-4 tracking-wider font-[1000] text-zinc-900 opacity-50  ">
+        <ul className={`${sofia.className}  lg:text-2xl text-xl  w-full ml-10`}>
+
+          <li className="  mb-4 tracking-wider font-[1000] text-zinc-900 opacity-50  ">
             - Development
-            </li>
-       
-            <li className=" mb-4 tracking-wider font-[1000] text-zinc-900 opacity-50  ">
+          </li>
+
+          <li className=" mb-4 tracking-wider font-[1000] text-zinc-900 opacity-50  ">
             - Advertising
-            </li>
-       
-            <li className=" mb-4 tracking-wider font-[1000] text-zinc-900 opacity-50  ">
+          </li>
+
+          <li className=" mb-4 tracking-wider font-[1000] text-zinc-900 opacity-50  ">
             - Project Management
-            </li>
-            <li className=" mb-4 tracking-wider font-[1000] text-zinc-900 opacity-50  ">
+          </li>
+          <li className=" mb-4 tracking-wider font-[1000] text-zinc-900 opacity-50  ">
             - Project Management
-            </li>
-            <li className=" mb-4 tracking-wider font-[1000] text-zinc-900 opacity-50  ">
+          </li>
+          <li className=" mb-4 tracking-wider font-[1000] text-zinc-900 opacity-50  ">
             - Client Services
-            </li>
-            <li className=" mb-4 tracking-wider font-[1000] text-zinc-900 opacity-50  ">
+          </li>
+          <li className=" mb-4 tracking-wider font-[1000] text-zinc-900 opacity-50  ">
             - SEO
-            </li>
-          </ul>
-        </section>
+          </li>
+        </ul>
+      </section>
     </>
   );
 }

@@ -54,7 +54,7 @@ function BlogPosts({ blogs,tags }) {
         <>
             <TagFilter tags={tags} filter={filter} handleFilter={handleFilter}></TagFilter>
 
-            <div className="w-[80%] m-[auto] flex flex-row flex-wrap   justify-between  py-10">
+            <div className="w-[80%] m-[auto] flex flex-row flex-wrap   justify-flex-start gap-[5%]   py-10">
                 {getTotalPosts(blogs).slice(indexOfFirstPost, indexOfLastPost).map((blog) => {
                     return (<BlogCardForBlogPage id={blog._id} photoPath={blog.pathName} title={blog.title} tags={blog.tags} ></BlogCardForBlogPage>
                     )

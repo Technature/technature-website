@@ -38,13 +38,13 @@ export default function RootLayout({ children }) {
         </div>
 
 
-        <nav className={`${sofia.className} text-md right-28 top-10 z-20   fixed hidden md:flex md:flex-row  mix-blend-exclusion`}>
+        <nav className={`${sofia.className} text-lg right-[160px] top-10 z-20   fixed hidden md:flex md:flex-row  mix-blend-exclusion`}>
 
-          <div className={"text-white hover:text-violet-600 font-extrabold tracking-wider mr-6 "}>
+          <div className={"text-zinc-300 hover:text-violet-600 font-[900] tracking-wider mr-6 "}>
             <Link href="/services">Services</Link>
           </div>
 
-          <div className="text-white hover:text-violet-600 font-extrabold tracking-wider">
+          <div className="text-zinc-300 hover:text-violet-600 font-[900] tracking-wider">
             <Link href="/contact">Contact </Link>
           </div>
         </nav>

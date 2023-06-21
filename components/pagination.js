@@ -18,7 +18,7 @@ export default function Pagination({ postsPerPage, totalPosts,active,setActive,i
     }
 
  return (
-        <div className="flex items-center justify-center  bg-white px-4 py-3 sm:px-6">
+        <div className="flex items-center justify-center  bg-white px-4 pt-5 pb-10  sm:px-6">
 
             <div className="flex-col sm:flex-row sm:flex sm:flex-1 sm:items-center sm:justify-center">
          

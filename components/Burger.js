@@ -23,10 +23,10 @@ export default function Burger({openModal,opened}) {
   
     return (
 
-              <div className={`cursor-pointer active:bg-gray-100 fixed  top-10 z-50  right-[46px]  md:right-[66px]`} onClick={openModal} onMouseEnter={onEnter} onMouseLeave={onLeave}>
-                <animated.div className='bg-gray-800  w-[50px] h-[3px]' style={TopLineAnimation.springs}></animated.div>
-                <div className='bg-gray-800 w-[50px] h-[3px] mb-2' ></div>
-                <animated.div className='bg-gray-800 w-[30px] h-[3px]'  style={BottomLineAnimation.springs}></animated.div>
+              <div className={`cursor-pointer active:bg-gray-700 fixed  top-10 z-[4000]  right-[46px]  md:right-[66px] mix-blend-exclusion`} onClick={openModal} onMouseEnter={onEnter} onMouseLeave={onLeave}>
+                <animated.div className='bg-white  w-[50px] h-[3px]' style={TopLineAnimation.springs}></animated.div>
+                <div className='bg-white w-[50px] h-[3px] mb-2' ></div>
+                <animated.div className='bg-white w-[30px] h-[3px]'  style={BottomLineAnimation.springs}></animated.div>
               </div>
       
     )

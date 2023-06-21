@@ -68,9 +68,9 @@ export default async function BlogPage({ params, searchParams }) {
         <h1 className=" w-4/5 m-[auto] text-white lg:text-start text-center font-extrabold text-4xl tracking-wide mb-10">
           More from the Blog
         </h1>
-        <div className="w-4/5 m-[auto] justify-center lg:justify-start flex flex-row">
+        <div className="w-4/5 m-[auto] justify-center lg:justify-start  flex flex-row">
 
-          <div className="flex flex-col  lg:flex-row gap-6 items-center">
+          <div className="flex flex-col  lg:flex-row gap-6 ">
             {blogs.slice(0, 2).map((blog) => {
               return (
                 <BlogCard
@@ -81,7 +81,7 @@ export default async function BlogPage({ params, searchParams }) {
                 ></BlogCard>
               );
             })}
-            <Link href={`/blog`} >
+            <Link className="m-[auto]" href={`/blog`} >
             <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                         className="w-[100px] h-[100px] cursor-pointer fill-white"
 	 viewBox="0 0 108.8 108.8"  xmlSpace="preserve">
