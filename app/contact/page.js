@@ -8,6 +8,7 @@ import { debounce } from "lodash";
 import * as Yup from "yup";
 import axios from "axios"
 import Toaster from "@/components/Toaster/toaster";
+import Loading from "@/components/loading/Loading";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,6 +19,7 @@ export default function Contact() {
   //state for the toaster to open or close
   const [open, setOpen] = useState(false);
   const [toasterType, setToasterType] = useState("");
+  const [loading, setLoading] = useState(false);
 
   //function to pass as prop for toaster
   const handleToaster = (type) => {
@@ -51,16 +53,20 @@ export default function Contact() {
         from: values.from,
         message: values.message,
       };
+      setLoading(true)
+
       await axios
         .post(`${process.env.NEXT_PUBLIC_URL}/api/sendForm`, form)
         .then((res) => {
-          handleToaster("success")
+         
           formik.resetForm();
+          handleToaster("success")
+          setLoading(false)
         })
         .catch((err) => {
           console.log(err)
           handleToaster("error")
-        });
+        })
     },
   });
 
@@ -194,14 +200,14 @@ export default function Contact() {
 
       <div className="w-full md:w-1/3 md:ml-40 z-40 flex flex-col sm:flex-row  md:flex-col justify-evenly items-center  mt-40 md:mt-0">
         <div>
-          <h2 className="text-lime-600 text-6xl font-extrabold mb-5 sm:mb-10">Marousi</h2>
+          <h2 className="text-tech text-6xl font-extrabold mb-5 sm:mb-10">Marousi</h2>
           <h3 className="text-zinc-700 text-xl font-extrabold">Technature</h3>
           <h3 className="text-zinc-700 text-xl font-extrabold">Panathineon 9</h3>
           <h3 className="text-zinc-700 text-xl font-extrabold md:mb-5">Marousi</h3>
         </div>
 
         <div>
-          <h3 className="text-lime-600 text-xl font-extrabold mb-3 md:mb-20">
+          <h3 className="text-tech text-xl font-extrabold mb-3 md:mb-20">
             +30 210 806 4614
           </h3>
           <Socials color={"black"}></Socials>
@@ -266,12 +272,17 @@ export default function Contact() {
             {formik.errors.message}
           </div>
         </div>
-        <button
-          className="border-lime-600 rounded-3xl border-2 px-9 py-2 text-lime-600 hover:text-white hover:bg-lime-600 active:opacity-70 text-sm"
-          onClick={handleSubmit}
-        >
-          ΑΠΟΣΤΟΛΗ
-        </button>
+        {loading
+          ?
+          <Loading></Loading> :
+          <button
+            className="border-tech rounded-3xl border-2 px-9 py-2 text-tech hover:text-white hover:bg-tech active:opacity-70 text-sm"
+            onClick={handleSubmit}
+          >
+            ΑΠΟΣΤΟΛΗ
+          </button>
+        }
+
       </form>
     </div>
   );

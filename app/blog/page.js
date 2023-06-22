@@ -12,11 +12,6 @@ const inter = Inter({ subsets: ["latin"] });
 
 const sofia = Sofia_Sans({ subsets: ["latin"] });
 
-export const metadata = {
-  title: "Technature blog",
-  description: "Technature company website",
-};
-
 
 
 export default async function Blog() {

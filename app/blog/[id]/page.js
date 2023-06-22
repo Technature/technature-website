@@ -35,7 +35,7 @@ export default async function BlogPage({ params, searchParams }) {
     <>
       <section id="blog" className={` mb-20 w-full ${sofia.className} `}>
         <header className=" md:px-[15%] pt-20 text-center mb-20">
-          <h5 className=" text-sm md:text-xl   text-lime-600 font-bold tracking-wider mb-3">
+          <h5 className=" text-sm md:text-xl   text-tech font-bold tracking-wider mb-3">
             {formatDate(blog.createdAt)}
           </h5>
           <h1 className="text-2xl md:text-4xl lg:text-5xl font-extrabold text-zinc-800 mb-5 md:mb-10 lg:mb-20">
@@ -64,7 +64,7 @@ export default async function BlogPage({ params, searchParams }) {
         </article>
       </section>
 
-      <section className="w-full bg-lime-600 z-0 py-20 ">
+      <section className="w-full bg-tech z-0 py-20 ">
         <h1 className=" w-4/5 m-[auto] text-white lg:text-start text-center font-extrabold text-4xl tracking-wide mb-10">
           More from the Blog
         </h1>

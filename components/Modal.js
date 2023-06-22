@@ -38,7 +38,7 @@ export default function Modal({ openModal, opened }) {
 
     <div
       id="modal"
-      className={` flex items-center justify-start w-screen h-screen bg-lime-600  z-20 fixed top-[0px] left-[0px] right-0 m-0 block ${opened ? "modalAnimationClose" : "modalAnimation"
+      className={` flex items-center justify-start w-screen h-screen bg-tech  z-20 fixed top-[0px] left-[0px] right-0 m-0 block ${opened ? "modalAnimationClose" : "modalAnimation"
         }`}
     >
 

@@ -22,7 +22,7 @@ setState(idx)
 
     <div className="flex flex-row cursor-pointer " onClick={handleAccordion(0)}>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-[50px] h-[50px]">
-            <path className="fill-lime-600 stroke-white" strokeLinecap="round" strokeLinejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+            <path className="fill-tech stroke-white" strokeLinecap="round" strokeLinejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
         </svg>
 
         <h1
@@ -44,7 +44,7 @@ setState(idx)
 
     <div className="flex flex-row cursor-pointer" onClick={handleAccordion(1)}>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-[50px] h-[50px]">
-            <path className="fill-lime-600 stroke-white" strokeLinecap="round" strokeLinejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+            <path className="fill-tech stroke-white" strokeLinecap="round" strokeLinejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
         </svg>
 
         <h1

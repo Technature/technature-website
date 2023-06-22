@@ -4,7 +4,11 @@
 
 :root {
   --background: #ffffff;
-  --technature: #58a857;
+  --technature: #23CB9F;
+  --hue: 223;
+	--bg: hsl(var(--hue),10%,90%);
+	--fg: hsl(var(--hue),10%,10%);
+
 }
 
 @media (prefers-color-scheme: dark) {

@@ -74,7 +74,7 @@ function CareersPage() {
         <h2 className={`${sofia.className} w-2/3 mt-10 text-md text-white`}>
           Αν πιστεύετε ότι θα ταιριάζετε στο ύφος και τις αξίες μας και ότι θα
           ήσασταν μια σπουδαία προσθήκη στην Technature, στείλτε μας το
-          βιογραφικό σας στο <a href="mailtio:info@technature.gr" className="text-lime-600 font-bold tracking-wide hover:text-lime-400">info@technature.gr</a>. Τα κοιτάμε όλα με την
+          βιογραφικό σας στο <a href="mailtio:info@technature.gr" className="text-tech font-bold tracking-wide hover:text-lime-400">info@technature.gr</a>. Τα κοιτάμε όλα με την
           απαιτούμενη προσοχή.
           <span className="text-rose-200">
             {" "}
@@ -97,17 +97,17 @@ function CareersPage() {
 
         <ul className={`${sofia.className} text-white  lg:text-xl text-xl font-bold w-full ml-10`}>
           <a href="mailto:info@technature.gr">
-            <li className="hover:text-lime-600 mb-4">
+            <li className="hover:text-tech mb-4">
              - Graphic Designer
             </li>
           </a>
           <a href="mailto:info@technature.gr">
-            <li className="hover:text-lime-600 mb-4">
+            <li className="hover:text-tech mb-4">
             -  Web Developer
             </li>
           </a>
           <a href="mailto:info@technature.gr">
-            <li className="hover:text-lime-600 mb-4">
+            <li className="hover:text-tech mb-4">
             -  Digital Content specialst
             </li>
           </a>

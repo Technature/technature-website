@@ -8,6 +8,7 @@ const sofia = Sofia_Sans({ subsets: ["latin"] });
 
 function Toaster({close,state,type}) {
 
+
     return (
     <div className={`z-50  rounded fixed bottom-20 md:right-40 transition-all cursor-pointer  shadow-lg p-4 flex flex-col `+`${state?styles.closeToaster:styles.openToaster} ${type=="error"?styles.error:styles.success}`}>
         <XSvg click={()=>{close(false)}} fill="#FFFFFF" width="15px" height="15px"></XSvg>

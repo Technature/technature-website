@@ -25,11 +25,11 @@
 
   .blogDescrHoverVariant{
     transition: color 0.5s;
-    color:rgb(101 163 13);
+    color:var(--technature);
   }
 
   .blogTag{
-    color:rgb(101 163 13);
+    color:var(--technature);
     transition:color 0.5s;
   }
 
@@ -43,6 +43,6 @@
     transition:background-color 0.4s ;
   }
   .bgHover{
-    background-color:rgb(101 163 13) ;
+    background-color:var(--technature) ;
     transition:background-color 0.4s ;
   }

@@ -4,43 +4,43 @@ import { useEffect } from "react";
 
 const  ScrollGallery = ({sofia})=>{
 
-  useEffect(() => {
-    // Source credit: http://thenewcode.com/279/Rotate-Elements-on-Scroll-with-JavaScript
+//   useEffect(() => {
+//     // Source credit: http://thenewcode.com/279/Rotate-Elements-on-Scroll-with-JavaScript
 
-var leftItem = document.getElementById('item0')
+// var leftItem = document.getElementById('item0')
 
-;(function(){
+// ;(function(){
 
-var throttle = function(type, name, obj){
-var obj = obj || window;
-var running = false;
-var func = function(){
-  if (running){ return; }
-  running = true;
-  requestAnimationFrame(function(){
-    obj.dispatchEvent(new CustomEvent(name));
-    running = false;
-  });
-};
-obj.addEventListener(type, func);
-};
+// var throttle = function(type, name, obj){
+// var obj = obj || window;
+// var running = false;
+// var func = function(){
+//   if (running){ return; }
+//   running = true;
+//   requestAnimationFrame(function(){
+//     obj.dispatchEvent(new CustomEvent(name));
+//     running = false;
+//   });
+// };
+// obj.addEventListener(type, func);
+// };
 
-throttle("scroll", "optimizedScroll");
-})();
-
-
-window.addEventListener("optimizedScroll", function(){
-
-console.log(window.scrollY)
+// throttle("scroll", "optimizedScroll");
+// })();
 
 
+// window.addEventListener("optimizedScroll", function(){
 
-// leftItem.style.transform = "translateY(" +( window.scrollY-(2900 ) )+ "px)";
-leftItem.style.opacity = window.scrollY-(2100) 
-leftItem.style.transition="opacity 0.2s" 
+// console.log(window.scrollY)
 
-})
-  }, []);
+
+
+// // leftItem.style.transform = "translateY(" +( window.scrollY-(2900 ) )+ "px)";
+// leftItem.style.opacity = window.scrollY-(2100) 
+// leftItem.style.transition="opacity 0.2s" 
+
+// })
+//   }, []);
 
     return(
         <>
@@ -49,7 +49,7 @@ leftItem.style.transition="opacity 0.2s"
 
         <div id="leftSide" className="w-1/2 md:w-1/3 mt-20  ml-20 md:ml-40">
           <div className="mb-80">
-            <div className="relative top-[33px] right-8 text-lime-600">01</div>
+            <div className="relative top-[33px] right-8 text-tech">01</div>
             <h1
               className={`${sofia.className} text-gray-800 tracking-tighter md:text-5xl text-3xl  mb-2 font-extrabold `}
             >
@@ -62,7 +62,7 @@ leftItem.style.transition="opacity 0.2s"
           </div>
 
           <div className="mb-80">
-            <div className="relative top-[33px] right-8 text-lime-600">02</div>
+            <div className="relative top-[33px] right-8 text-tech">02</div>
             <h1
               className={`${sofia.className} text-gray-800 tracking-tighter md:text-5xl text-3xl  mb-2 font-extrabold `}
             >
@@ -74,7 +74,7 @@ leftItem.style.transition="opacity 0.2s"
           </div>
 
           <div className="mb-80">
-            <div className="relative top-[33px] right-8 text-lime-600">03</div>
+            <div className="relative top-[33px] right-8 text-tech">03</div>
             <h1
               className={`${sofia.className} text-gray-800 tracking-tighter md:text-5xl text-3xl  mb-2 font-extrabold `}
             >
@@ -86,7 +86,7 @@ leftItem.style.transition="opacity 0.2s"
           </div>
 
           <div className="mb-80">
-            <div className="relative top-[33px] right-8 text-lime-600">04</div>
+            <div className="relative top-[33px] right-8 text-tech">04</div>
             <h1
               className={`${sofia.className} text-gray-800 tracking-tighter md:text-5xl text-3xl  mb-2 font-extrabold `}
             >
@@ -98,7 +98,7 @@ leftItem.style.transition="opacity 0.2s"
           </div>
 
           <div className="mb-80">
-            <div className="relative top-[33px] right-8 text-lime-600">05</div>
+            <div className="relative top-[33px] right-8 text-tech">05</div>
             <h1
               className={`${sofia.className} text-gray-800 tracking-tighter md:text-5xl text-3xl  mb-2 font-extrabold `}
             >
@@ -110,7 +110,7 @@ leftItem.style.transition="opacity 0.2s"
           </div>
         </div>
         <div id="right-side" className=" h-full w-1/2 p-20 fixed top-[25%] right-0">
-        {/* <div id="item0" className="bg-red-500 w-[150px] h-[150px] fixed top-[40%] right-40"></div> */}
+        {/* <div id="item0" className="bg-red-500 w-[150px] h-[150px] fixed top-[40%] right-40"></div>
         <figure id="item0" className=" w-full aspect-[4/3] sm:aspect-[5/3] relative  ">
             <Image
               src="/stock1.webp"
@@ -118,7 +118,7 @@ leftItem.style.transition="opacity 0.2s"
               fill="true"
               className="object-cover"
             ></Image>
-          </figure>
+          </figure> */}
         </div>
       </section>
         </>

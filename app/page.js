@@ -8,16 +8,12 @@ import MainButton from "@/components/MainButton";
 import ImageDistort from "@/components/imageDistort/imageDistort";
 import axios from "axios"
 import { blogPosts } from "@/helpers/dummyData";
-
+import Head from "next/head"
 
 const inter = Inter({ subsets: ["latin"] });
 
 const sofia = Sofia_Sans({ subsets: ["latin"] });
 
-export const metadata = {
-  title: "Technature",
-  description: "Technature company website",
-};
 
 
 
@@ -44,11 +40,10 @@ export default async function Home() {
         <div className=" w-[90%] md:w-1/2 sm:w-1/2 lg:w-1/3 sm:ml-5 md:ml-10 lg:ml-40 mt-10 sm:mt-0 text-center sm:text-start">
           <h1
             className={`${sofia.className} text-gray-800 tracking-tighter md:text-6xl text-4xl mb-5   font-extrabold`}
-          >Δημιουργώντας ψηφιακές εμπειρίες
+          >Unlocking Your Online Potential.
           </h1>
           <h2>
-            Ένα όμορφο ταξίδι προς την ανάπτυξη του brand σας ξεκινάει εδώ!
-            Θέλετε να ξεχωρίσετε από τα τετρημένα; Είμαστε συνοδοιπόροι σε κάθε βήμα σας και σας οδηγούμε με ασφάλεια στο ψηφιακό κόσμο. Ας ανέβουμε στη κορυφή μαζί!
+          We are dedicated to bringing your digital aspirations to life. Through our innovative strategies and creative expertise, we craft captivating online experiences that inspire and engage your target audience. 
 
           </h2>
 
@@ -85,7 +80,7 @@ export default async function Home() {
               <h1
                 className={`${sofia.className} text-gray-800 tracking-tighter md:text-5xl text-3xl  mb-5 font-extrabold `}
               >
-                Tο δημιουργικό ψηφιακό μας γραφείο με την εμπείρα του <span className="text-lime-600">προσφέρει ...</span>
+                Tο δημιουργικό ψηφιακό μας γραφείο με την εμπείρα του <span className="text-tech">προσφέρει ...</span>
               </h1>
             </div>
           </section>

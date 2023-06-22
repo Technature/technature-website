@@ -20,7 +20,7 @@ function ServicesPage() {
 
         <div className=" w-[90%] md:w-1/2 sm:w-1/2 lg:w-1/3 sm:ml-5 md:ml-10 lg:ml-40 mt-10 sm:mt-0 text-center sm:text-start">
           <h2 className={`${sofia.className} text-xl`}>
-            Στη Technature <span className="text-lime-600">δίνουμε λύση </span>
+            Στη Technature <span className="text-tech">δίνουμε λύση </span>
             σε όλα τα θέματα που απασχολούν την εικόνα του brand σας στο
             διαδίκτυο. Προσφέρουμε υπηρεσίες όπως: SEO, Paid Advertising,
             Content Marketing, Social Meida, Branding + Design, Video &
@@ -31,7 +31,7 @@ function ServicesPage() {
             {servicesArray.map((service)=>{
               return(
                 <li >
-                <a className="hover:text-lime-600" href={`#${service.title}`}>
+                <a className="hover:text-tech" href={`#${service.title}`}>
                 <span className="text-blue-600">{`> `}</span>{`${service.title.substring(0, 17)}`}
                 </a>
               </li>

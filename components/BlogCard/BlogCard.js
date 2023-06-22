@@ -32,7 +32,7 @@ const BlogCard = ({title,tags,photoPath,id}) => {
 
                 <div id="description" className={`p-5 `}>
                     {tags.map((tag,idx)=>{
-                        return   <span key={`${idx}-${tag}`} className={`uppercase text-xs font-bold tracking-wider mb-3 mr-2 text-lime-600`}>{tag}</span>
+                        return   <span key={`${idx}-${tag}`} className={`uppercase text-xs font-bold tracking-wider mb-3 mr-2 text-tech`}>{tag}</span>
                     })}
                   
                     <p className={`text-xl sm:text-xl md:text-xl  lg:text-[1.8rem] mt-3 font-extrabold ${touched?blogDescrHoverVariant:blogDescr} `}>{title}</p>
