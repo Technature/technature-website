@@ -82,7 +82,7 @@ function ImageDistort({src}) {
 
       return (
             <div id="distortContainer" className="distortContainer ">
-                  <div id="distortInner" className="distortInner lg:w-[400px] lg:h-[400px] w-[250px] h-[250px]  md:w-[300px] md:h-[300px]">
+                  <div id="distortInner" className="distortInner lg:w-[400px] lg:h-[400px] w-[200px] h-[200px] xs:w-[250px] xs:h-[250px]: sm:w-[300px] sm:h-[300px]  md:w-[350px] md:h-[350px]">
                         <Image alt="distort effect" src={src} fill={true}  style={{ objectFit: "contain" }}></Image>
                   </div>
             </div>

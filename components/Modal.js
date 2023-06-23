@@ -43,7 +43,7 @@ export default function Modal({ openModal, opened }) {
     >
 
       <div className='w-1/2 md:w-1/4  ml-10 md:ml-60'>
-        <ul className="font-extrabold text-neutral-200 text-6xl  ">
+        <ul className="font-extrabold text-neutral-200 text-4xl xs:text-6xl  ">
           {links.map((link,idx) => {
             return(
             <li key={`${link.name}-${idx}`} className={`mb-2 item${idx+1} ${opened ? "" : "slide"}`}  >
@@ -73,7 +73,7 @@ export default function Modal({ openModal, opened }) {
         </ul>
       </div>
 
-      <div id="socialsWrapper " className='left-10 bottom-[1rem] absolute'><Socials opened={opened} color="white"></Socials></div>
+      <div id="socialsWrapper " className='left-2 xs:left-10 bottom-[1rem] absolute'><Socials hover={"opacity-70"} opened={opened} color="white"></Socials></div>
 
     </div>
 

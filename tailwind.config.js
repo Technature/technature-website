@@ -16,6 +16,10 @@ module.exports = {
         colors: {
           'tech': '#23CB9F',
         },
+        screens: {
+          'xs': '420px',
+          // => @media (min-width: 420px) { ... }
+        },
     },
   },
   plugins: [],

@@ -34,7 +34,7 @@ export default async function Blog() {
 
 
       {/* SECTION 1 */}
-      <section className=" h-[100vh] relative width-full  flex items-center justify-center flex-col sm:flex-row ">
+      <section className=" h-[100vh] relative width-full  flex items-center justify-center flex-col sm:flex-row bgImage">
 
         <ImageDistort src={"/BLOG.png"}></ImageDistort>
 

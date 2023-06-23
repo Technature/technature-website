@@ -13,8 +13,8 @@ const ImageCard=(props)=> {
 
     return ( 
         <div id="imageCard" className=" m-3 md:m-6">
-        <div id="image-wrapper" className="w-full relative pt-[100%]  mb-6">
-     <Image alt="imagecard" src={props.src} fill="true" className="w-full h-full top-0 left-0 object-cover"></Image>
+        <div id="image-wrapper" className="w-full relative  mb-6 aspect-[2/3]">
+     <Image alt="imagecard" src={props.src} fill="true" className=" object-cover "></Image>
      </div>
      <p className={`${sofia.className} text-lime-500 font-semibold mb-5`}>BRANDING &nbsp; &nbsp; E-COMMERCE &nbsp; &nbsp; MARKETING</p>
      <h1

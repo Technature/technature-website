@@ -33,7 +33,7 @@ export default async function Home() {
     <main className={`${inter.className} `}>
 
       {/* SECTION 1 */}
-      <section className=" h-[100vh] relative width-full  flex items-center justify-center flex-col sm:flex-row ">
+      <section className=" h-[100vh] relative width-full  flex items-center justify-center flex-col sm:flex-row  bgImage">
 
         <ImageDistort src={"/home.png"}></ImageDistort>
 
@@ -43,7 +43,7 @@ export default async function Home() {
           >Unlocking Your Online Potential.
           </h1>
           <h2>
-          We are dedicated to bringing your digital aspirations to life. Through our innovative strategies and creative expertise, we craft captivating online experiences that inspire and engage your target audience. 
+            We are dedicated to bringing your digital aspirations to life. Through our innovative strategies and creative expertise, we craft captivating online experiences that inspire and engage your target audience.
 
           </h2>
 
@@ -55,69 +55,68 @@ export default async function Home() {
       {/* SECTION 2 */}
       <section className=" relative width-full py-40 flex flex-col md:flex-row  items-center justify-start">
         <div id="image-wrapper" className="w-full md:w-1/2 aspect-square relative  mb-6">
-          <video style={{objectFit: "cover",width:"100%",height:"100%"}} autoplay="true"  muted loop>
-          <source src="meeting2.mp4" type="video/mp4" />
-              </video>
-            </div>
-            <div className=" w-[90%] md:w-1/2 lg:w-1/3 md:m-[auto]  p-4 text-center md:text-start">
-              <h1
-                className={`${sofia.className} text-gray-800 tracking-tighter lg:text-7xl md:text-5xl text-6xl  mb-5 font-extrabold `}
-              >
-                Making brands a damn site better
-              </h1>
-              <h2>
-                Let&apos;s face it, first impressions matter. Your website&apos;s an
-                opportunity to wow your audience, so why waste it with bad design?
-                Because brands win new fans when they&apos;re brave enough to go beyond
-                their creative comfort zone.
-              </h2>
-            </div>
-          </section>
+          <video style={{ objectFit: "cover", width: "100%", height: "100%" }} autoplay="true" muted loop>
+            <source src="meeting2.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div className=" w-[90%] md:w-1/2 lg:w-1/3 md:m-[auto]  p-4 text-center md:text-start">
+          <h1
+            className={`${sofia.className} text-gray-800 tracking-tighter lg:text-7xl md:text-5xl text-6xl  mb-5 font-extrabold `}
+          >
+           
+          Healthcare space is our specialty.
+          </h1>
+          <h2>
+          We leverage the latest digital strategies and develop healthcare marketing programs and strategies based on data. Our goal is to increase brand awareness, establish your online presence and produce measurable and useful results.
+          </h2>
+        </div>
+      </section>
 
-          {/* SECTION 3 */}
-          <section className=" relative width-full flex flex-row items-center justify-center">
-            <div className=" w-2/3 md:mr-40">
-              <h1
-                className={`${sofia.className} text-gray-800 tracking-tighter md:text-5xl text-3xl  mb-5 font-extrabold `}
-              >
-                Tο δημιουργικό ψηφιακό μας γραφείο με την εμπείρα του <span className="text-tech">προσφέρει ...</span>
-              </h1>
-            </div>
-          </section>
+      {/* SECTION 3 */}
+      <section className=" relative width-full flex flex-row items-center justify-center">
+        <div className=" w-2/3 md:mr-40">
+          <h1
+            className={`${sofia.className} text-gray-800 tracking-tighter md:text-5xl text-3xl  mb-5 font-extrabold `}
+          >
 
-          <ScrollGallery sofia={sofia}></ScrollGallery>
+            Our creative digital agency with its experience <span className="text-tech">offers ..</span>
+          </h1>
+        </div>
+      </section>
 
-          <Services sofia={sofia}></Services>
+      <ScrollGallery sofia={sofia}></ScrollGallery>
 
-          <Gallery sofia={sofia}></Gallery>
+      <Services sofia={sofia}></Services>
 
+      <Gallery sofia={sofia}></Gallery>
 
 
-          <section className=" relative w-full flex flex-col items-center justify-center pb-60 ">
+
+      <section className=" relative w-full flex flex-col items-center justify-center pb-60 ">
 
 
-            <div className=" relative w-full  flex flex-col items-center justify-start  ">
+        <div className=" relative w-full  flex flex-col items-center justify-start  ">
 
 
-              <h1
-                className={`${sofia.className} text-zinc-700 tracking-tighter md:text-5xl text-3xl  my-10 font-extrabold `}
-              >
-                Latest articles
-              </h1>
-              <div id="blogWrapper" className="w-[80%] flex justify-center gap-4 flex-wrap mb-20">
-                {blogs.slice(0, 3).map((blog, idx) => {
-                  return <BlogCardForBlogPage id={blog._id} key={idx} title={blog.title} tags={blog.tags} photoPath={blog.pathName}></BlogCardForBlogPage>
-                })}
+          <h1
+            className={`${sofia.className} text-zinc-700 tracking-tighter md:text-5xl text-3xl  my-10 font-extrabold `}
+          >
+            Latest articles
+          </h1>
+          <div id="blogWrapper" className="w-[80%] flex justify-center gap-4 flex-wrap mb-20">
+            {blogs.slice(0, 3).map((blog, idx) => {
+              return <BlogCardForBlogPage id={blog._id} key={idx} title={blog.title} tags={blog.tags} photoPath={blog.pathName}></BlogCardForBlogPage>
+            })}
 
-              </div>
+          </div>
 
-              <MainButton href={"/blog"}>VIEW ALL BLOG POSTS</MainButton>
-
-
-            </div>
-          </section>
+          <MainButton href={"/blog"}>VIEW ALL BLOG POSTS</MainButton>
 
 
-        </main>
-        );
+        </div>
+      </section>
+
+
+    </main>
+  );
 }

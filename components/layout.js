@@ -22,12 +22,12 @@ export default function Layout({ children }) {
   return (
 
       <body className={open ? "openModal" : ""}>
-        <div className="cursor-pointer m-7 fixed top-0 z-50 w-[50px] h-[50px] md:w-[80px] md:h-[80px]" onClick={() => {
+        <div className="cursor-pointer m-10 fixed top-0 z-50 w-[40px] h-[40px] md:w-[60px] md:h-[60px]" onClick={() => {
           setOpen(false)
         }}>
           <Link href="/">
             <Image
-              src="/logo4.png"
+              src="/logo5.png"
               alt="technature logo"
               fill="true"
             ></Image>

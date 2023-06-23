@@ -23,11 +23,11 @@ const  Gallery = ({sofia})=>{
                 <div id="imageGallery" className="w-full flex justify-center items-center flex-col md:flex-row md:mt-20">
                 
                    <div id="image-card-wrapper" className="w-[80%] md:w-1/3   mt-60">
-                   <ImageCard src={"/pic1.webp"}></ImageCard>
+                   <ImageCard src={"/stock2.webp"}></ImageCard>
                 </div>
 
                 <div id="image-card-wrapper" className="w-[80%] md:w-1/3 ">
-                   <ImageCard src={"/pic1.webp"}></ImageCard>
+                   <ImageCard src={"/stock1.webp"} ></ImageCard>
                 </div>
                 </div>
       </section>

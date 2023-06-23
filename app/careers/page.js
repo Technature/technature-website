@@ -9,12 +9,12 @@ function CareersPage() {
   return (
     <>
       {/* SECTION 1 */}
-      <section className=" h-[100vh] relative width-full  flex items-center justify-center flex-col sm:flex-row ">
+      <section className=" h-[100vh] relative width-full  flex items-center justify-center flex-col sm:flex-row bgImage">
         <ImageDistort src={"/join.png"}></ImageDistort>
 
         <div className=" w-[90%] md:w-1/2 sm:w-1/2 lg:w-1/3 sm:ml-5 md:ml-10 lg:ml-40 mt-10 sm:mt-0 text-center sm:text-start">
           <h1
-            className={`${sofia.className} text-gray-800  lg:text-7xl md:text-5xl text-6xl  mb-5 font-extrabold `}
+            className={`${sofia.className} text-gray-800  lg:text-7xl md:text-5xl text-3xl  mb-5 font-extrabold `}
           >
             Γιατί Technature;
           </h1>
@@ -33,21 +33,21 @@ function CareersPage() {
         </div>
       </section>
 
-      <section className="w-full p-40 ">
+      <section className="w-full p-3 xs:p-10 md:p-40 mb-5 xs:mb-0 ">
         <h1
           className={`${sofia.className} text-gray-800 tracking-tighter lg:text-7xl md:text-2xl text-3xl  mb-5 font-extrabold w-1/2`}
         >
           <span className="text-blue-600">Ισορροπία</span> μεταξύ επαγγελματικής
           και προσωπικής ζωής
         </h1>
-        <h2 className={`${sofia.className} w-2/3 ml-40 mt-10 text-sm`}>
+        <h2 className={`${sofia.className}  sm:w-2/3 xs:ml-10 md:ml-40 mt-10 text-sm`}>
           Η ζωή μας κινείται σε υψηλούς ρυθμούς και έχουμε γίνει πολυάσχολοι.
           Εκτιμούμε κάθε μέρα και περισσότερο τον χρόνο που αφιερώνουμε σε άτομα
           και πράγματα που έχουν αξία για εμάς. Όλοι μας θέλουμε να περνάμε
           περισσότερο χρόνο καθημερινά με φίλους, την οικογένεια, τα αγαπημένα
           μας πρόσωπα και να κάνουμε τις δραστηριότητες που μας γεμίζουν.
         </h2>
-        <h2 className={`${sofia.className} w-2/3 ml-40 mt-10 text-sm`}>
+        <h2 className={`${sofia.className}  sm:w-2/3 xs:ml-10 md:ml-40 mt-10 text-sm`}>
           Στη Technature κατανοούμε απόλυτα την ανάγκη αυτή και έτσι θεσπίσαμε
           ένα ευέλικτο ωράριο εργασίας μεταξύ 9π.μ και 5:30 μ.μ.. Μετά από το
           πέρας της ημέρας δεν αποστέλλουμε email, ούτε επικοινωνούμε με τους
@@ -58,20 +58,20 @@ function CareersPage() {
         </h2>
       </section>
 
-      <section className={`${sofia.className} w-full  bg-zinc-800 p-40`}>
+      <section className={`${sofia.className} w-full  bg-zinc-800 p-5 xs:p-10 sm:p-20 md:p-30 lg:p-40`}>
         <h1
-          className={`${sofia.className} text-white tracking-tighter lg:text-5xl md:text-xl text-2xl  mb-5 font-extrabold w-1/2`}
+          className={`${sofia.className} text-white tracking-tighter lg:text-5xl md:text-xl text-2xl  mb-5 font-extrabold `}
         >
           Πώς να<span className="text-blue-600"> υποβάλλετε</span> αίτηση
         </h1>
 
         <h1
-          className={`${sofia.className} text-white tracking-tighter lg:text-2xl text-lg  mb-5 font-extrabold w-1/2`}
+          className={`${sofia.className} text-white tracking-tighter lg:text-2xl text-lg  mb-5 font-extrabold `}
         >
           Ευπρόσδεκτες όλες οι αιτήσεις.
         </h1>
 
-        <h2 className={`${sofia.className} w-2/3 mt-10 text-md text-white`}>
+        <h2 className={`${sofia.className} md:w-2/3 mt-10 text-md text-white`}>
           Αν πιστεύετε ότι θα ταιριάζετε στο ύφος και τις αξίες μας και ότι θα
           ήσασταν μια σπουδαία προσθήκη στην Technature, στείλτε μας το
           βιογραφικό σας στο <a href="mailtio:info@technature.gr" className="text-tech font-bold tracking-wide hover:text-lime-400">info@technature.gr</a>. Τα κοιτάμε όλα με την
@@ -82,7 +82,7 @@ function CareersPage() {
             μπορούμε να απαντήσουμε σε κάθε αίτηση που λαμβάνουμε.
           </span>
         </h2>
-        <h2 className={`${sofia.className} w-2/3 mt-10 text-md text-white`}>
+        <h2 className={`${sofia.className} md:w-2/3 mt-10 text-md text-white`}>
           Για πληροφορίες σχετικά με τον τρόπο με τον οποίο επεξεργαζόμαστε τα
           δεδομένα σας κατά την υποβολή της αίτησης σας, ανατρέξτε στην πολιτική
           μας για τις αιτήσεις εργασίας.
@@ -95,7 +95,7 @@ function CareersPage() {
 
         </h1>
 
-        <ul className={`${sofia.className} text-white  lg:text-xl text-xl font-bold w-full ml-10`}>
+        <ul className={`${sofia.className} text-white  lg:text-xl text-xl font-bold w-full sm:ml-10`}>
           <a href="mailto:info@technature.gr">
             <li className="hover:text-tech mb-4">
              - Graphic Designer
