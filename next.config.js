@@ -5,6 +5,16 @@ const nextConfig = {
         // your project has ESLint errors.
         ignoreDuringBuilds: true,
       },
+      images: {
+        remotePatterns: [
+          {
+            protocol: 'https',
+            hostname: 'technaturegr.fra1.cdn.digitaloceanspaces.com',
+            port: '',
+            pathname: '/technature-website/**',
+          },
+        ],
+      },
 }
 
 module.exports = nextConfig

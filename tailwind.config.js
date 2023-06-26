@@ -15,6 +15,7 @@ module.exports = {
         },
         colors: {
           'tech': '#23CB9F',
+          'darkBg':'#32A5AC'
         },
         screens: {
           'xs': '420px',

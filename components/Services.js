@@ -12,7 +12,7 @@ const  Services = ({sofia})=>{
     return(
         <>
          {/* SECTION 5 */}
-      <section className=" relative width-full py-40 flex flex-col md:flex-row items-center justify-center bg-gradient-to-r from-cyan-400 to-blue-700">
+      <section className=" relative width-full py-40 flex flex-col md:flex-row items-center justify-center bg-gradient-to-r from-tech to-darkBg">
         <div className=" w-full md:w-1/3 lg:mr-40 text-center md:ml-10 md:text-start mb-20 md:md-0">
           <h1
             className={`${sofia.className} text-white  md:text-1xl text-2xl  pb-5 font-semibold `}

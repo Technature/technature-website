@@ -10,6 +10,9 @@
 	--fg: hsl(var(--hue),10%,10%);
 
 }
+ol{
+  list-style: auto;
+}
 
 @media (prefers-color-scheme: dark) {
   :root {
