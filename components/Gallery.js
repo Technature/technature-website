@@ -11,7 +11,7 @@ const  Gallery = ({sofia})=>{
                   <section className=" relative width-full py-40 flex flex-col items-center justify-center bg-zinc-800">
       <div id="Titles" className="flex flex-col md:flex-row items-center justify-center">
       <div className="w-[80%]  md: w-1/3 relative aspect-square  ">
-          <Image alt="gallery" src="/work.svg" fill={true}></Image>
+          <Image alt="gallery" src="/work2.svg" fill={true}></Image>
         </div>
         <div className="w-1/2 md:w-1/3 md:ml-20 md:mt-40">
           <h1 className={`${sofia.className} text-white tracking-tighter md:text-7xl text-5xl  mb-5 font-extrabold `}>

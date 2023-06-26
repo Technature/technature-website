@@ -9,27 +9,19 @@ function CareersPage() {
   return (
     <>
       {/* SECTION 1 */}
-      <section className=" h-[100vh] relative width-full  flex items-center justify-center flex-col sm:flex-row bgImage">
-        <ImageDistort src={"/join.png"}></ImageDistort>
+      <section className=" h-[100vh] relative width-full  flex items-center justify-center flex-col sm:flex-row  bgImage shadow-bgFade">
+        <ImageDistort src={"/join.svg"}></ImageDistort>
 
         <div className=" w-[90%] md:w-1/2 sm:w-1/2 lg:w-1/3 sm:ml-5 md:ml-10 lg:ml-40 mt-10 sm:mt-0 text-center sm:text-start">
           <h1
             className={`${sofia.className} text-gray-800  lg:text-7xl md:text-5xl text-3xl  mb-5 font-extrabold `}
           >
-            Γιατί Technature;
+           Why Technature
           </h1>
           <h2 className={`${sofia.className}`}>
-            Όταν μπείτε στα γραφεία μας θα σας προϋπαντήσουμε με χαμόγελο. Σε
-            περίοπτη θέση θα συναντήσετε τους designers να σχεδιάζουν καινοτόμα
-            σχέδια, logos και websites.
+          When you step into our offices, you'll be warmly greeted with a smile. In a prominent area, you'll meet our talented designers crafting innovative designs, logos, and websites. Working alongside them, our specialized marketers offer creative solutions to promote your business. Our team of business analysts and strategists ensures a seamless implementation. And in a dedicated space, our skilled developers transform coffee-fueled ideas into impeccable code.
           </h2>
-          <h2 className={`${sofia.className}`}>
-            Παραδίπλα οι εξειδικευμένοι marketeer μας θα σας παραθέσουν
-            δημιουργικές λύσεις για να προωθήσετε την επιχείρηση σας, business
-            analysts και strategists για το πως θα υλοποιηθεί το όλο κομμάτι και
-            σε μία απομονωμένη γωνία τους μοναχικούς developers που μετατρέπουν
-            τον καφέ σε κώδικα.
-          </h2>
+
         </div>
       </section>
 
@@ -37,71 +29,46 @@ function CareersPage() {
         <h1
           className={`${sofia.className} text-gray-800 tracking-tighter lg:text-7xl md:text-2xl text-3xl  mb-5 font-extrabold w-1/2`}
         >
-          <span className="text-blue-600">Ισορροπία</span> μεταξύ επαγγελματικής
-          και προσωπικής ζωής
+        Work / life  <span className="text-blue-600">balance</span> 
         </h1>
-        <h2 className={`${sofia.className}  sm:w-2/3 xs:ml-10 md:ml-40 mt-10 text-sm`}>
-          Η ζωή μας κινείται σε υψηλούς ρυθμούς και έχουμε γίνει πολυάσχολοι.
-          Εκτιμούμε κάθε μέρα και περισσότερο τον χρόνο που αφιερώνουμε σε άτομα
-          και πράγματα που έχουν αξία για εμάς. Όλοι μας θέλουμε να περνάμε
-          περισσότερο χρόνο καθημερινά με φίλους, την οικογένεια, τα αγαπημένα
-          μας πρόσωπα και να κάνουμε τις δραστηριότητες που μας γεμίζουν.
+        <h2 className={`${sofia.className}  sm:w-2/3 xs:ml-10 md:ml-40 mt-10 text-mdc`}>
+        In our fast-paced lives, we often find ourselves caught up in busyness. However, we are increasingly recognizing the value of quality time spent with loved ones and meaningful pursuits. At Technature, we wholeheartedly acknowledge this need. We prioritize the well-being and mental health of our team, ensuring that no one is required to work excessive hours and miss out on significant moments in their lives.
         </h2>
-        <h2 className={`${sofia.className}  sm:w-2/3 xs:ml-10 md:ml-40 mt-10 text-sm`}>
-          Στη Technature κατανοούμε απόλυτα την ανάγκη αυτή και έτσι θεσπίσαμε
-          ένα ευέλικτο ωράριο εργασίας μεταξύ 9π.μ και 5:30 μ.μ.. Μετά από το
-          πέρας της ημέρας δεν αποστέλλουμε email, ούτε επικοινωνούμε με τους
-          εργαζομένους για θέματα της εταιρείας. Δεν έχουμε την απαίτηση από
-          κανέναν να εργάζεται παράλογες ώρες και να χάνει σημαντικές στιγμές
-          από τη ζωή του. Θέτουμε την ευημερία και τη ψυχική ευεξία ως
-          προτεραιότητα.{" "}
-        </h2>
+
       </section>
 
       <section className={`${sofia.className} w-full  bg-zinc-800 p-5 xs:p-10 sm:p-20 md:p-30 lg:p-40`}>
         <h1
           className={`${sofia.className} text-white tracking-tighter lg:text-5xl md:text-xl text-2xl  mb-5 font-extrabold `}
         >
-          Πώς να<span className="text-blue-600"> υποβάλλετε</span> αίτηση
+          How to<span className="text-blue-600"> apply</span>
         </h1>
 
         <h1
           className={`${sofia.className} text-white tracking-tighter lg:text-2xl text-lg  mb-5 font-extrabold `}
         >
-          Ευπρόσδεκτες όλες οι αιτήσεις.
+         Application Process
         </h1>
 
-        <h2 className={`${sofia.className} md:w-2/3 mt-10 text-md text-white`}>
-          Αν πιστεύετε ότι θα ταιριάζετε στο ύφος και τις αξίες μας και ότι θα
-          ήσασταν μια σπουδαία προσθήκη στην Technature, στείλτε μας το
-          βιογραφικό σας στο <a href="mailtio:info@technature.gr" className="text-tech font-bold tracking-wide hover:text-lime-400">info@technature.gr</a>. Τα κοιτάμε όλα με την
-          απαιτούμενη προσοχή.
-          <span className="text-rose-200">
-            {" "}
-            Μην αγχώνεστε, δεν πετάμε βιογραφικά. Όμως, όπως είναι φυσικό, δεν
-            μπορούμε να απαντήσουμε σε κάθε αίτηση που λαμβάνουμε.
-          </span>
-        </h2>
-        <h2 className={`${sofia.className} md:w-2/3 mt-10 text-md text-white`}>
-          Για πληροφορίες σχετικά με τον τρόπο με τον οποίο επεξεργαζόμαστε τα
-          δεδομένα σας κατά την υποβολή της αίτησης σας, ανατρέξτε στην πολιτική
-          μας για τις αιτήσεις εργασίας.
-        </h2>
+        <h2 className={`${sofia.className} md:w-2/3 mt-10 text-lg text-white`}>
+        We welcome all applications from individuals who believe they align with our style and values and would make a valuable addition to Technature. If you are interested, please send your CV to <a href="mailtio:info@technature.gr" className="text-tech font-bold tracking-wide hover:text-lime-400">career@technature.gr</a>. Rest assured that we review each application with careful consideration. While we do not discard any resumes, kindly understand that we may not be able to respond to every inquiry we receive. For information regarding the handling of your data during the application process, please refer to our job application policy.
+   
 
+        </h2>
         <h1
           className={`${sofia.className} text-white tracking-tighter lg:text-4xl text-xl mt-20 mb-5 font-extrabold w-full `}
         >
-          Τρέχουσες κενές θέσεις εργασίας.
+         Current vacancies
 
         </h1>
 
         <ul className={`${sofia.className} text-white  lg:text-xl text-xl font-bold w-full sm:ml-10`}>
           <a href="mailto:info@technature.gr">
             <li className="hover:text-tech mb-4">
-             - Graphic Designer
+             -Even if there isn't an immediate fit, we encourage you to share any interesting content you have. We would love to take a look and appreciate your contribution.
             </li>
           </a>
-          <a href="mailto:info@technature.gr">
+          {/* <a href="mailto:info@technature.gr">
             <li className="hover:text-tech mb-4">
             -  Web Developer
             </li>
@@ -110,12 +77,12 @@ function CareersPage() {
             <li className="hover:text-tech mb-4">
             -  Digital Content specialst
             </li>
-          </a>
+          </a> */}
         </ul>
 
       </section>
 
-      <section
+      {/* <section
         className={`${sofia.className} w-full flex flex-col  items-center  bg-gradient-to-r from-cyan-400 to-blue-700 p-10 lg:p-20 xl:p-40`}
       >
 
@@ -149,7 +116,7 @@ function CareersPage() {
             - SEO
           </li>
         </ul>
-      </section>
+      </section> */}
     </>
   );
 }

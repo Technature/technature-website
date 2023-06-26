@@ -73,7 +73,7 @@ export default function Modal({ openModal, opened }) {
         </ul>
       </div>
 
-      <div id="socialsWrapper " className='left-2 xs:left-10 bottom-[1rem] absolute'><Socials hover={"opacity-70"} opened={opened} color="white"></Socials></div>
+      <div id="socialsWrapper " className='left-2 xs:left-10 bottom-[5rem] sm:bottom-[1rem] absolute'><Socials hover={"opacity-70"} opened={opened} color="white"></Socials></div>
 
     </div>
 

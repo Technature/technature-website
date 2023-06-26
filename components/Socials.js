@@ -32,7 +32,7 @@ export default function Socials({ openModal, opened, color,hover }) {
 
 
 
-      <a id="facebook" href="/" target="_blank" rel="noopener noreferrer" className='ml-4'>
+      <a id="facebook" href="https://www.facebook.com/technaturegr" target="_blank" rel="noopener noreferrer" className='ml-4'>
         <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" className={`w-[40px] xs:w-[50px] h-[40px] xs:h-[50px]  hover:${hover}`} >
           <g clip-path="url(#clip0_201_43)" className={`fill-${color}`}>
             <rect width="36" height="36" fill="none" />
@@ -43,7 +43,7 @@ export default function Socials({ openModal, opened, color,hover }) {
         </svg>
       </a>
 
-      <a id="linkedin" href="/" target="_blank" rel="noopener noreferrer" className='ml-4'>
+      <a id="linkedin" href="https://www.linkedin.com/company/technature-ike/mycompany/" target="_blank" rel="noopener noreferrer" className='ml-4'>
         <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" className={`w-[40px] xs:w-[50px] h-[40px] xs:h-[50px]  hover:${hover}`}>
           <g clip-path="url(#clip0_201_575)"  className={`fill-${color} `}>
             <rect width="36" height="36" fill="none" />

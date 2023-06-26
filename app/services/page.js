@@ -16,22 +16,19 @@ function ServicesPage() {
   return (
     <>
       {/* SECTION 1 */}
-      <section className=" h-[100vh] relative width-full flex items-center justify-center flex-col md:flex-row bgImage">
-        <ImageDistort src={"/services.png"}></ImageDistort>
+      <section className=" h-[100vh] relative width-full flex items-center justify-center flex-col md:flex-row bgImage  shadow-bgFade">
+        <ImageDistort src={"/services.svg"}></ImageDistort>
 
         <div className=" w-[90%] md:w-1/2 sm:w-1/2 lg:w-[37%] sm:ml-5 md:ml-10 lg:ml-40 mt-10 sm:mt-0 text-center sm:text-start flex flex-col  items-center sm:items-start ">
           <h2 className={`${sofia.className} text-xl`}>
-            Στη Technature <span className="text-tech">δίνουμε λύση </span>
-            σε όλα τα θέματα που απασχολούν την εικόνα του brand σας στο
-            διαδίκτυο. Προσφέρουμε υπηρεσίες όπως: SEO, Paid Advertising,
-            Content Marketing, Social Meida, Branding + Design, Video &
-            Photography.
+
+            Through<span className="text-tech"> strategic thinking</span> and captivating digital elements, we skillfully take over social media, we design exceptional websites and branding that make an immediate impression and evoke powerful emotions. To witness the true extent of our capabilities, explore our comprehensive array of services offered by our digital creative agency.
           </h2>
 
           <ul className="w-[200px] grid grid-rows-3 xl:grid-cols-[repeat(3,minmax(180px,200px))] grid-cols-[repeat(1,minmax(180px,200px))] sm:grid-cols-[repeat(2,minmax(180px,200px))] mt-10 gap-2 font-bold">
             {servicesArray.map((service)=>{
               return(
-                <li className="text-start" >
+                <li className="text-start" key={service.title} >
                 <a className="hover:text-tech" href={`#${service.title}`}>
                 <span className="text-blue-600">{`> `}</span>{`${service.title}`}
                 </a>
@@ -48,7 +45,7 @@ function ServicesPage() {
         <div id="leftSide" className="w-full  px-5 sm:px-20">
           {servicesArray.map((service, idx) => {
             return (
-              <div id={`${service.title}`} className="flex flex-col lg:flex-row justify-between items-center w-full mb-40">
+              <div id={`${service.title}`} className="flex flex-col lg:flex-row justify-between items-center w-full mb-40" >
                 <article
                   className="w-full lg:w-[40%] mb-10 lg:mb-0"
                   key={service.title + idx}
@@ -83,10 +80,10 @@ function ServicesPage() {
         >
           <div className="w-full">
             <h1 className="text-white text-md xs:text-lg sm:text-5xl font-extrabold tracking-wide">
-              Who we help
+          
             </h1>
             <h1 className="text-white text-md xs:text-lg sm:text-5xl font-extrabold tracking-wide mb-10 lg:mb-0">
-              Σε ποιους κλάδους απευθυνόμαστε!
+            Which industries we are specialized on
             </h1>
          
           </div>

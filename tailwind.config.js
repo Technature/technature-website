@@ -20,6 +20,9 @@ module.exports = {
           'xs': '420px',
           // => @media (min-width: 420px) { ... }
         },
+        boxShadow: {
+          'bgFade': '0 0 8px 16px white inset',
+        }
     },
   },
   plugins: [],

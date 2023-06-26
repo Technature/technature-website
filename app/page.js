@@ -33,9 +33,9 @@ export default async function Home() {
     <main className={`${inter.className} `}>
 
       {/* SECTION 1 */}
-      <section className=" h-[100vh] relative width-full  flex items-center justify-center flex-col sm:flex-row  bgImage">
+      <section className=" h-[100vh] relative width-full  flex items-center justify-center flex-col sm:flex-row  bgImage shadow-bgFade">
 
-        <ImageDistort src={"/home.png"}></ImageDistort>
+        <ImageDistort src={"/tech.svg"}></ImageDistort>
 
         <div className=" w-[90%] md:w-1/2 sm:w-1/2 lg:w-1/3 sm:ml-5 md:ml-10 lg:ml-40 mt-10 sm:mt-0 text-center sm:text-start">
           <h1
@@ -43,7 +43,7 @@ export default async function Home() {
           >Unlocking Your Online Potential.
           </h1>
           <h2>
-            We are dedicated to bringing your digital aspirations to life. Through our innovative strategies and creative expertise, we craft captivating online experiences that inspire and engage your target audience.
+          Your journey to growth starts here. We assist businesses in standing out when they are stagnant. As you navigate the digital landscape, we're there to support you at every step, bringing you closer to achieving your ultimate success.
 
           </h2>
 
@@ -61,13 +61,13 @@ export default async function Home() {
         </div>
         <div className=" w-[90%] md:w-1/2 lg:w-1/3 md:m-[auto]  p-4 text-center md:text-start">
           <h1
-            className={`${sofia.className} text-gray-800 tracking-tighter lg:text-7xl md:text-5xl text-6xl  mb-5 font-extrabold `}
+            className={`${sofia.className} text-gray-800 tracking-tighter lg:text-6xl md:text-4xl text-5xl  mb-5 font-extrabold `}
           >
            
-          Healthcare space is our specialty.
+           We Generate Interest and Demand for Healthcare Brands.
           </h1>
           <h2>
-          We leverage the latest digital strategies and develop healthcare marketing programs and strategies based on data. Our goal is to increase brand awareness, establish your online presence and produce measurable and useful results.
+          By harnessing cutting-edge data-driven digital techniques, we create healthcare marketing initiatives that enhance brand recognition, optimize your online visibility, and produce measurable results.
           </h2>
         </div>
       </section>

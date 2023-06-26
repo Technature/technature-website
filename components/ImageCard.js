@@ -16,7 +16,7 @@ const ImageCard=(props)=> {
         <div id="image-wrapper" className="w-full relative  mb-6 aspect-[2/3]">
      <Image alt="imagecard" src={props.src} fill="true" className=" object-cover "></Image>
      </div>
-     <p className={`${sofia.className} text-lime-500 font-semibold mb-5`}>BRANDING &nbsp; &nbsp; E-COMMERCE &nbsp; &nbsp; MARKETING</p>
+     <p className={`${sofia.className} text-emerald-300 font-semibold mb-5`}>BRANDING &nbsp; &nbsp; E-COMMERCE &nbsp; &nbsp; MARKETING</p>
      <h1
  className={`${sofia.className} text-white  md:text-3xl text-4xl  mb-2 font-extrabold `}
 >

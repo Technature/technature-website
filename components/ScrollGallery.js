@@ -53,10 +53,10 @@ const  ScrollGallery = ({sofia})=>{
             <h1
               className={`${sofia.className} text-gray-800 tracking-tighter md:text-5xl text-3xl  mb-2 font-extrabold `}
             >
-              Κοινό.
+              Audience.
             </h1>
             <h2 className={`${sofia.className} text-gray-600  font-semibold`}>
-            Μέσω σωστών τεχνικών και γνώσης ετών πάνω στο τομέα του μάρκετινγκ, αναζητούμε το σωστό κοινό για να συνδέσουμε το brand σας μαζί του.
+            With the right techniques and years of marketing knowledge, we find the right audience to connect.
 
             </h2>
           </div>
@@ -66,10 +66,10 @@ const  ScrollGallery = ({sofia})=>{
             <h1
               className={`${sofia.className} text-gray-800 tracking-tighter md:text-5xl text-3xl  mb-2 font-extrabold `}
             >
-              Ορατότητα.
+              Visibility.
             </h1>
             <h2 className={`${sofia.className} text-gray-600  font-semibold`}>
-            Βελτιστοποιούμε τόσο την εμφάνιση σας αλλά και το τρόπου και τη συχνότητα που εμφανίζεστε στα social media και στο διαδίκτυο.
+            We optimize both your appearance and how often you appear on social media and online
             </h2>
           </div>
 
@@ -78,10 +78,10 @@ const  ScrollGallery = ({sofia})=>{
             <h1
               className={`${sofia.className} text-gray-800 tracking-tighter md:text-5xl text-3xl  mb-2 font-extrabold `}
             >
-              Περιεχόμενο.
+              Content.
             </h1>
             <h2 className={`${sofia.className} text-gray-600  font-semibold`}>
-            Σχετικό και με γνώμονα τα αποτελέσματα.
+            Relevant and results driven
             </h2>
           </div>
 
@@ -90,10 +90,10 @@ const  ScrollGallery = ({sofia})=>{
             <h1
               className={`${sofia.className} text-gray-800 tracking-tighter md:text-5xl text-3xl  mb-2 font-extrabold `}
             >
-             Ταξίδι.
+            Journey.
             </h1>
             <h2 className={`${sofia.className} text-gray-600  font-semibold`}>
-            Διασφαλίζουμε ότι οι πελάτες σας λαμβάνουν όλες τις πληροφορίες που χρειάζονται.
+            We make sure your audience get all the information they need
             </h2>
           </div>
 
@@ -102,10 +102,10 @@ const  ScrollGallery = ({sofia})=>{
             <h1
               className={`${sofia.className} text-gray-800 tracking-tighter md:text-5xl text-3xl  mb-2 font-extrabold `}
             >
-         Αποτέλεσμα.
+          Result.
             </h1>
             <h2 className={`${sofia.className} text-gray-600  font-semibold`}>
-            Αποσκοπούμε στο να προσελκύσουμε το κατάλληλο κοινό και να αυξήσουμε την επισκεψημότητα στο brand σας ώστε να πετύχουμε τους επιχειρηματικούς σας στόχους.
+            We aim to attract the right audience and increase traffic to your brand to achieve your goals.
             </h2>
           </div>
         </div>

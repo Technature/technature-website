@@ -2,6 +2,7 @@
 import Link from "next/link";
 import { Inter, Sofia_Sans, Prompt } from "next/font/google";
 import Socials from "./Socials";
+import servicesArray from "@/app/services/servicesArray";
 
 const sofia = Sofia_Sans({ subsets: ["latin"] });
 
@@ -54,36 +55,14 @@ export default function Footer({}) {
         <p className="text-tech">EXPERTS IN</p>
         <div>
           <ul>
-            <li>
-              <Link className="hover:text-tech" href="/services">
-              SEO
-              </Link>
-            </li>
-            <li>
-              <Link className="hover:text-tech" href="/services">
-              Paid Advertising -PPC
-              </Link>
-            </li>
-            <li>
-              <Link className="hover:text-tech" href="/services">
-              Content Marketing
-              </Link>
-            </li>
-            <li>
-              <Link className="hover:text-tech" href="/services">
-              Social Media
-              </Link>
-            </li>
-            <li>
-              <Link className="hover:text-tech" href="/services">
-              Branding + Design
-              </Link>
-            </li>
-            <li>
-              <Link className="hover:text-tech" href="/services">
-              Video+ Photography
-              </Link>
-            </li>
+            {servicesArray.map((service,idx)=>{
+
+              return(  <li key={"s"+idx}>
+                <Link className="hover:text-tech" href="/services">
+                {service.title}
+                </Link>
+              </li>)
+            })}
           </ul>
         </div>
       </div>

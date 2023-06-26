@@ -37,11 +37,11 @@ export default function Layout({ children }) {
 
         <nav className={`${sofia.className} text-lg right-[160px] top-10 z-20   fixed hidden md:flex md:flex-row  mix-blend-exclusion`}>
 
-          <div className={"text-zinc-300 hover:text-violet-600 font-[900] tracking-wider mr-6 "}>
+          <div className={"text-zinc-300 hover:text-pink-600 font-[900] tracking-wider mr-6 "}>
             <Link href="/services">Services</Link>
           </div>
 
-          <div className="text-zinc-300 hover:text-violet-600 font-[900] tracking-wider">
+          <div className="text-zinc-300 hover:text-pink-600 font-[900] tracking-wider">
             <Link href="/contact">Contact </Link>
           </div>
         </nav>

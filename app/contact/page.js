@@ -192,7 +192,8 @@ export default function Contact() {
     }
   }, []);
 
-  return (
+  return (<>
+  
     <div
       className={`min-h-screen ${sofia.className} flex flex-col md:flex-row justify-start items-center cursor-crosshair `}
     >
@@ -212,7 +213,7 @@ export default function Contact() {
           </h3>
           <Socials color={"black"}></Socials>
         </div>
-
+       
       </div>
 
       <Toaster state={open} close={setOpen} type={toasterType}></Toaster>
@@ -285,5 +286,10 @@ export default function Contact() {
 
       </form>
     </div>
+
+
+  
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3141.6330024937865!2d23.80251771244586!3d38.05563687179891!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a19943218fbb3b%3A0x4bd29b1d14e504a3!2sTechnature%20IKE!5e0!3m2!1sen!2sgr!4v1687778632064!5m2!1sen!2sgr" width="100%" height="550" style={{border:"0"}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </>
   );
 }

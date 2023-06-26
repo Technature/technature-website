@@ -3,35 +3,35 @@ const servicesArray=[
  
     {
         title:"Paid Advertising -PPC",
-        text:"Η πληρωμένη διαφήμιση αποτελεί ένα από τα πιο σημαντικά κομμάτια του digital marketing. Το είδος καμπάνιας PPC (pay per click) είναι σαν ένα καλοδιατηρημένο σπορ αμάξι. Ταχύτατο, κομψό, αποτελεσματικό και έχει σχεδιαστεί να σας οδηγήσει στον προορισμό σας σε χρόνο ρεκόρ. Όμως, όπως το σπόρ αμάξι, έτσι και οι καμπάνιες PPC είναι δύσκολες στη διαχείριση. Εδώ αναλαμβάνουμε εμείς. ",
+        text:"Revolutionize your marketing strategy with PPC, the ultimate catalyst for online success! Experience targeted ads that skyrocket your visibility and generate maximum returns. Say goodbye to wasted ad spend and hello to precise audience targeting. Get ready to dominate the digital landscape and watch your business thrive. Start your PPC journey today!",
         pathName:"/ppc.webp"
     },
   
     {
         title:"Content Marketing",
-        text:"Ψάχνετε για ένα διαφορετικό, πιο καινοτόμο και δημιουργικό τρόπο να προσεγγίσετε το κοινό σας; Τότε πήρατε τη σωστή απόφαση που απευθυνθήκατε σε εμάς. Το σωστό content δεν πρέπει να είναι μόνο ενημερωτικό και εκπαιδευτικό διότι τότε καταντάει μονότονο. Σκοπός είναι να ψυχαγωγεί, να ευχαριστεί και να κρατάει το ενδιαφέρον του κοινού σας ενεργό. ",
+        text:"Fuel your brand's growth with captivating content that captivates and converts. From engaging blog posts to viral videos, we'll craft a content strategy that ignites your audience's curiosity and fuels your online presence. Get ready to make your brand the talk of the town!",
         pathName:"/stock1.webp"
     },
     {
         title:"SEO",
-        text:"Στη Technature δίνουμε λύση σε όλα τα θέματα που απασχολούν την εικόνα του brand σας στο διαδίκτυο. Προσφέρουμε υπηρεσίες όπως: SEO, Paid Advertising, Content Marketing, Social Meida, Branding + Design, Video & Photography.",
+        text:"Unlock the power of search engines and dominate the digital landscape with our cutting-edge SEO solutions. From keyword optimization to technical wizardry, we'll boost your website's visibility and drive organic traffic. Get ready to rise through the ranks and claim the top spot in search results!",
         pathName:"/SEO.webp"
     },
  
     {
         title:"Branding + Design",
-        text:"Χρειάζεστε να φτιάξετε το brand σας από το μηδέν ή μήπως τα ίδια χρώματα, κείμενα και design που διατηρείτε για χρόνια άρχισαν να σας φαίνονται κάπως “βαρετά”; Σε κάθε περίπτωση είμαστε εδώ για να δώσουμε μία νέα πνοή στο brand και να εδραιώσουμε την ισχυρή και ξεχωριστή παρουσία σας στο διαδίκτυο.",
+        text:"Elevate your brand to new heights with captivating design that leaves a lasting impression. From eye-catching logos to stunning visuals, our creative wizards will weave magic to craft a brand identity that sets you apart. Get ready to make waves and leave your competitors in awe!",
         pathName:"/design.webp"
     },
   
     {
         title:"Video+ Photography",
-        text:"Η φωτογραφίες και τα βίντεο είναι ο κατάλληλος τρόπος για να απαθανατίσετε στιγμές από τη ζωή σας. Είναι βέβαια και εξαιρετικός τρόπος για να προωθήσετε τα προϊόντα και τις υπηρεσίες του brand σας στα social media και το site σας.",
+        text:"Bring your brand to life with mesmerizing visuals that speak volumes. Our skilled videographers and photographers capture the essence of your brand, creating compelling stories that resonate with your audience. Get ready to showcase your brand in its best light and make a lasting impact!",
         pathName:"/video.webp"
     },
     {
         title:"Social Media",
-        text:"Αν επιθυμείτε να κάνετε θραύση και να αφήσετε το αποτύπωμα σας στα social media τότε είμαστε εδώ για εσάς. Η ειδική ομάδα μας δημιουργεί για εσάς μοναδικό περιεχόμενο που θα αγγίζει το κοινό σας σε ένα βαθύτερο επίπεδο, θα απευθύνεται στα συναισθήματα τους, θα τους ενημερώνει για το brand σας και πάνω απ’ όλα θα τους ψυχαγωγεί. ",
+        text:"Unleash the power of social media and watch your brand go viral! With our strategic social media expertise, we'll captivate your audience with engaging content and craft campaigns that drive likes, shares, and conversions. Get ready to ignite a social media frenzy and become the talk of the town!" ,
         pathName:"/social.webp"
     },
 ]

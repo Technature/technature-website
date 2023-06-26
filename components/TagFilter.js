@@ -71,13 +71,13 @@ function TagFilter({ tags, filter, handleFilter }) {
             <div className="m-[auto] w-[100%]  flex-row justify-center mt-10 hidden md:flex" >
                 <button
                     onClick={handleFilter("all")}
-                    className={`bg-white py-[9px] px-[12px]  lg:py-[13px] lg:px-[15px] text-tech font-bold hover:text-lime-500 capitalize ${filter !== "all" ? "hover:border-white border-2 border-white" : "hover:border-lime-500 border-2 border-tech"}`} >All</button>
+                    className={`bg-white py-[9px] px-[12px]  lg:py-[13px] lg:px-[15px] text-tech font-bold hover:text-emerald-300 capitalize ${filter !== "all" ? "hover:border-white border-2 border-white" : "hover:border-emerald-300 border-2 border-tech"}`} >All</button>
                 {tags.map((tag, idx) => {
                     return (
                         <button
                             key={"tagfilter" + idx}
                             onClick={handleFilter(tag.name)}
-                            className={`bg-white   py-[9px] px-[12px]  lg:py-[13px] lg:px-[15px] text-tech font-bold hover:text-lime-500 capitalize ${filter !== tag.name ? "hover:border-white border-2 border-white" : "hover:border-lime-500 border-2 border-tech"}`} >{tag.name}</button>
+                            className={`bg-white   py-[9px] px-[12px]  lg:py-[13px] lg:px-[15px] text-tech font-bold hover:text-emerald-300 capitalize ${filter !== tag.name ? "hover:border-white border-2 border-white" : "hover:border-emerald-300 border-2 border-tech"}`} >{tag.name}</button>
                     )
                 })}
             </div>
