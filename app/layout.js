@@ -1,8 +1,5 @@
 import "./globals.css";
 import { Inter, Sofia_Sans, Prompt } from "next/font/google";
-import Head from "next/head";
-
-
 import Layout from "@/components/layout";
 
 const sofia = Sofia_Sans({ subsets: ["latin"] });
@@ -23,13 +20,15 @@ export const metadata = {
 };
 
 
+
 export default function RootLayout({ children }) {
 
-		
-  return (
-    <html lang="en"> 
 
+  return (
+
+    <html lang="en"> 
  <Layout>{children}</Layout>
     </html>
+    
   );
 }
