@@ -11,6 +11,20 @@ const sofia = Sofia_Sans({ subsets: ["latin"] });
 
 const inter = Inter({ subsets: ["latin"] });
 
+const structuredData= {
+  "@context": "http://schema.org",
+  "@type": "Organization",
+    "name": "Jobeat",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Marousi, Athens, Greece",
+      "postalCode": "15124",
+      "streetAddress": "Panathineon 9"
+    },
+    "url": "https://www.technature.gr",
+        "about":"Building digital experiences",
+        "image":"https://technaturegr.fra1.cdn.digitaloceanspaces.com/technature-website/logo4.png"
+  }
 
 export default function Layout({ children }) {
   const [open, setOpen] = useState(false);
@@ -22,6 +36,12 @@ export default function Layout({ children }) {
   return (
 
       <body className={open ? "openModal" : ""}>
+          
+        <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+      />
+      
         <div className="cursor-pointer m-10 fixed top-0 z-50 w-[40px] h-[40px] md:w-[60px] md:h-[60px]" onClick={() => {
           setOpen(false)
         }}>

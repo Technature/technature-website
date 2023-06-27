@@ -24,27 +24,11 @@ export const metadata = {
 
 
 export default function RootLayout({ children }) {
-  const structuredData= {
-		"@context": "http://schema.org",
-		"@type": "Organization",
-		  "name": "Jobeat",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Marousi, Athens, Greece",
-        "postalCode": "15124",
-        "streetAddress": "Panathineon 9"
-      },
-		  "url": "https://www.technature.gr",
-          "about":"Building digital experiences",
-          "image":"https://technaturegr.fra1.cdn.digitaloceanspaces.com/technature-website/logo4.png"
-		}
+
 		
   return (
     <html lang="en"> 
-        {/* <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
-      /> */}
+
  <Layout>{children}</Layout>
     </html>
   );
