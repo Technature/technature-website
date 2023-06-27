@@ -45,10 +45,10 @@ export default async function Home() {
 
   return (
     <main className={`${inter.className} `}>
- <script
+ {/* <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
-      />
+      /> */}
       {/* SECTION 1 */}
       <section className=" h-[100vh] relative width-full  flex items-center justify-center flex-col sm:flex-row  bgImage shadow-bgFade">
 
