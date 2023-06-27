@@ -43,7 +43,7 @@ export default function Modal({ openModal, opened }) {
     >
 
       <div className='w-1/2 md:w-1/4  ml-10 md:ml-60'>
-        <ul className="font-extrabold text-neutral-200 text-4xl xs:text-6xl  ">
+        <ul className="font-extrabold text-neutral-200 text-4xl xs:text-6xl list-none ">
           {links.map((link,idx) => {
             return(
             <li key={`${link.name}-${idx}`} className={`mb-2 item${idx+1} ${opened ? "" : "slide"}`}  >
@@ -58,7 +58,7 @@ export default function Modal({ openModal, opened }) {
       </div>
 
       <div className='w-1/3 ml-10'>
-        <ul className="font-semibold text-neutral-200 text-3xl  ">
+        <ul className="font-semibold text-neutral-200 text-3xl list-none ">
 
           {subLinks.map((subLink,idx)=>{
             return(

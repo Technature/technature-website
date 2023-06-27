@@ -12,7 +12,14 @@
 }
 ol{
   list-style: auto;
+
 }
+
+ul{
+  list-style:initial;
+ 
+}
+
 
 @media (prefers-color-scheme: dark) {
   :root {

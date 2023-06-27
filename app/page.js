@@ -2,7 +2,7 @@ import Image from "next/image";
 import { Inter, Sofia_Sans, Prompt } from "next/font/google";
 import Services from "@/components/Services";
 import Gallery from "@/components/Gallery"
-import ScrollGallery from "@/components/ScrollGallery";
+import ScrollGallery from "@/components/ScrollGallery/ScrollGallery";
 import BlogCardForBlogPage from "@/components/BlogCard/BlogCardForBlogPage";
 import MainButton from "@/components/MainButton";
 import ImageDistort from "@/components/imageDistort/imageDistort";
@@ -88,7 +88,7 @@ export default async function Home() {
 
       <Services sofia={sofia}></Services>
 
-      <Gallery sofia={sofia}></Gallery>
+      {/* <Gallery sofia={sofia}></Gallery> */}
 
 
 

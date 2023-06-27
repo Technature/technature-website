@@ -25,7 +25,7 @@ function ServicesPage() {
             Through<span className="text-tech"> strategic thinking</span> and captivating digital elements, we skillfully take over social media, we design exceptional websites and branding that make an immediate impression and evoke powerful emotions. To witness the true extent of our capabilities, explore our comprehensive array of services offered by our digital creative agency.
           </h2>
 
-          <ul className="w-[200px] grid grid-rows-3 xl:grid-cols-[repeat(3,minmax(180px,200px))] grid-cols-[repeat(1,minmax(180px,200px))] sm:grid-cols-[repeat(2,minmax(180px,200px))] mt-10 gap-2 font-bold">
+          <ul className="w-[200px] grid grid-rows-3 xl:grid-cols-[repeat(3,minmax(180px,200px))] grid-cols-[repeat(1,minmax(180px,200px))] sm:grid-cols-[repeat(2,minmax(180px,200px))] mt-10 gap-2 font-bold list-none">
             {servicesArray.map((service)=>{
               return(
                 <li className="text-start" key={service.title} >
@@ -82,7 +82,7 @@ function ServicesPage() {
             <h1 className="text-white text-md xs:text-lg sm:text-5xl font-extrabold tracking-wide">
           
             </h1>
-            <h1 className="text-white text-md xs:text-lg sm:text-5xl font-extrabold tracking-wide mb-10 lg:mb-0">
+            <h1 className="text-white text-md xs:text-lg sm:text-5xl font-extrabold tracking-wide mb-10 lg:mb-0 mr-10">
             Which industries we are specialized on
             </h1>
          

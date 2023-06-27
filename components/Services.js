@@ -19,7 +19,7 @@ const  Services = ({sofia})=>{
           >
             Our services
           </h1>
-          <ul>
+          <ul className="list-none">
             {servicesArray.map((service,idx)=>{
               return (
                 <li>
@@ -27,7 +27,7 @@ const  Services = ({sofia})=>{
                   onClick={clickServices(idx+1)}
                   className={`${sofia.className} ${
                     services !== idx+1
-                      ? "text-black opacity-20 hover:opacity-70"
+                      ? "text-black opacity-30 hover:opacity-60"
                       : "text-white opacity 100"
                   }  tracking-tighter lg:text-5xl text-3xl  mb-5 font-extrabold cursor-pointer `}
                 >
@@ -44,13 +44,13 @@ const  Services = ({sofia})=>{
           </button>
           </Link>
         </div>
-        <div className="w-[90%]  md:w-1/2 lg:w-1/3 relative  aspect-square   ">
+        <div className="w-[90%]  md:w-1/2 lg:w-1/3 relative  aspect-square shadow-lg  ">
           {servicesArray.map((service,idx)=>{
             return(
               <Image
               style={{ objectFit: "cover" }}
               key={service.title}
-              className={services == idx+1 ? "show" : "show close"}
+              className={`rounded  ${services == idx+1 ? "show" : "show close"}`}
               src={service.pathName}
               fill={true}
               alt={service.title}

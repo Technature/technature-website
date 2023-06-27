@@ -65,7 +65,7 @@ function CareersPage() {
         <ul className={`${sofia.className} text-white  lg:text-xl text-xl font-bold w-full sm:ml-10`}>
           <a href="mailto:info@technature.gr">
             <li className="hover:text-tech mb-4">
-             -Even if there isn't an immediate fit, we encourage you to share any interesting content you have. We would love to take a look and appreciate your contribution.
+             Even if there isn't an immediate fit, we encourage you to share any interesting content you have. We would love to take a look and appreciate your contribution.
             </li>
           </a>
           {/* <a href="mailto:info@technature.gr">

@@ -6,7 +6,7 @@ export default function Socials({ openModal, opened, color,hover }) {
   return (
 
     <div className="flex mb-6">
-      <a id="tiktok" href="/" target="_blank" rel="noopener noreferrer" className='ml-4'>
+      {/* <a id="tiktok" href="/" target="_blank" rel="noopener noreferrer" className='ml-4'>
         <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" className={`w-[40px] xs:w-[50px] h-[40px] xs:h-[50px]  hover:${hover}`} >
           <g clip-path="url(#clip0_201_43)" className={`fill-${color} `}>
             <rect width="36" height="36" fill="none" />
@@ -15,11 +15,11 @@ export default function Socials({ openModal, opened, color,hover }) {
           </g>
 
         </svg>
-      </a>
+      </a> */}
 
 
 
-      <a id="instagram" href="/" target="_blank" rel="noopener noreferrer" className='ml-4'>
+      <a id="instagram" href="https://www.instagram.com/technaturegr/?fbclid=IwAR2JYaxZdqr9yvPTU_3X3-3_cGWdBh3LSZPsV6vF146K5wur9yK6PuE7-uI" target="_blank" rel="noopener noreferrer" className='ml-4'>
         <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" className={`w-[40px] xs:w-[50px] h-[40px] xs:h-[50px]  hover:${hover}`} >
           <g clip-path="url(#clip0_201_460)" className={`fill-${color} `}>
             <rect width="36" height="36" fill="none" />

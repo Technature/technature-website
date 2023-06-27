@@ -12,7 +12,7 @@ export default function Footer({}) {
       className={`relative width-full p-20 bg-zinc-900 ${sofia.className} flex justify-center md:justify-start flex-col sm:flex-row`}
     >
       <div className="w-1/5 hidden md:block ">
-        <ul className="font-extrabold text-neutral-200  ">
+        <ul className="font-extrabold text-neutral-200 list-none ">
           <li>
             <Link className="hover:text-tech" href="/">
               Home
@@ -38,13 +38,13 @@ export default function Footer({}) {
               Contact
             </Link>
           </li>
-          <li>
+          {/* <li>
             <Link className="hover:text-tech" href="/faqs">
               FAQs
             </Link>
-          </li>
+          </li> */}
           <li>
-            <Link className="hover:text-tech" href="/privacy-policy">
+            <Link className="hover:text-tech" href="/privacyPolicy">
               Privacy Policy
             </Link>
           </li>
@@ -54,7 +54,7 @@ export default function Footer({}) {
       <div className="font-extrabold text-neutral-200 w-2/5  hidden md:block ">
         <p className="text-tech">EXPERTS IN</p>
         <div>
-          <ul>
+          <ul className="list-none">
             {servicesArray.map((service,idx)=>{
 
               return(  <li key={"s"+idx}>
@@ -70,7 +70,7 @@ export default function Footer({}) {
       <div className="font-extrabold text-neutral-200 w-1/5  hidden md:block ">
         <p className="text-tech">OFFICE</p>
         <div>
-          <ul>
+          <ul className="list-none">
             <li>
               <Link className="hover:text-tech" href="/contact">
                 Marousi
