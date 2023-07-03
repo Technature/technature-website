@@ -19,18 +19,18 @@ function ServicesPage() {
       <section className=" h-[100vh] relative width-full flex items-center justify-center flex-col md:flex-row bgImage  shadow-bgFade">
         <ImageDistort src={"/services.svg"}></ImageDistort>
 
-        <div className=" w-[90%] md:w-1/2 sm:w-1/2 lg:w-[37%] sm:ml-5 md:ml-10 lg:ml-40 mt-10 sm:mt-0 text-center sm:text-start flex flex-col  items-center sm:items-start ">
+        <div className=" w-[90%] md:w-1/2 sm:w-1/2 lg:w-[37%] sm:ml-5 md:ml-10 lg:ml-40 mt-10 sm:mt-0 text-center sm:text-start flex flex-col items-center sm:items-start ">
           <h2 className={`${sofia.className} text-xl`}>
 
             Through<span className="text-tech"> strategic thinking</span> and captivating digital elements, we skillfully take over social media, we design exceptional websites and branding that make an immediate impression and evoke powerful emotions. To witness the true extent of our capabilities, explore our comprehensive array of services offered by our digital creative agency.
           </h2>
 
-          <ul className="w-[200px] grid grid-rows-3 xl:grid-cols-[repeat(3,minmax(180px,200px))] grid-cols-[repeat(1,minmax(180px,200px))] sm:grid-cols-[repeat(2,minmax(180px,200px))] mt-10 gap-2 font-bold list-none">
+          <ul className="w-full grid grid-rows-3 justify-evenly xl:grid-cols-[repeat(2, minmax(0, 1fr))] grid-cols-[repeat(1,minmax(180px,200px))] sm:grid-cols-[repeat(2,minmax(180px,200px))] mt-10 gap-2 font-bold list-none">
             {servicesArray.map((service)=>{
               return(
-                <li className="text-start" key={service.title} >
-                <a className="hover:text-tech" href={`#${service.title}`}>
-                <span className="text-blue-600">{`> `}</span>{`${service.title}`}
+                <li className="text-start m-1 " key={service.title} >
+                <a className="hover:text-tech flex flex-row" href={`#${service.title}`}>
+                <Image src="/arrow.webp" height={7} width={10} className="m-1"></Image> <span >{`${service.title}`}</span>
                 </a>
               </li>
               )

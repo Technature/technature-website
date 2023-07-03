@@ -42,12 +42,12 @@ export default function Layout({ children }) {
       /> */}
 
       
-        <div className="cursor-pointer m-10 fixed top-0 z-50 w-[40px] h-[40px] md:w-[60px] md:h-[60px]" onClick={() => {
+        <div className="cursor-pointer m-10 fixed top-0 z-50 w-[40px] h-[40px] md:w-[80px] md:h-[80px] " onClick={() => {
           setOpen(false)
         }}>
           <Link href="/">
             <Image
-              src="/logo5.png"
+              src="/logo.webp"
               alt="technature logo"
               fill="true"
             ></Image>

@@ -33,6 +33,13 @@ ul{
 background-image:url("/bg2.png");
 }
 
+.bgGradient{
+  background-image:url("/bgGradient.webp");
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  }
+
 html { scroll-behavior: smooth; } 
 
 body {

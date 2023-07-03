@@ -9,9 +9,9 @@ const sofia = Sofia_Sans({ subsets: ["latin"] });
 export default function Footer({}) {
   return (
     <footer
-      className={`relative width-full p-20 bg-zinc-900 ${sofia.className} flex justify-center md:justify-start flex-col sm:flex-row`}
+      className={`relative width-full p-20 bg-zinc-900 ${sofia.className} flex justify-center md:justify-evenly flex-col sm:flex-row`}
     >
-      <div className="w-1/5 hidden md:block ">
+      <div className="m-2 hidden md:block ">
         <ul className="font-extrabold text-neutral-200 list-none ">
           <li>
             <Link className="hover:text-tech" href="/">
@@ -51,7 +51,7 @@ export default function Footer({}) {
         </ul>
       </div>
 
-      <div className="font-extrabold text-neutral-200 w-2/5  hidden md:block ">
+      <div className="font-extrabold text-neutral-200 m-2   hidden md:block ">
         <p className="text-tech">EXPERTS IN</p>
         <div>
           <ul className="list-none">
@@ -67,20 +67,31 @@ export default function Footer({}) {
         </div>
       </div>
 
-      <div className="font-extrabold text-neutral-200 w-1/5  hidden md:block ">
+      <div className="font-extrabold text-neutral-200 m-2   hidden md:block ">
         <p className="text-tech">OFFICE</p>
         <div>
           <ul className="list-none">
             <li>
-              <Link className="hover:text-tech" href="/contact">
+              <a className="hover:text-tech" target="_blank" href="https://goo.gl/maps/ZoVhwxYpsMM21zXV9">
                 Marousi
-              </Link>
+              </a>
             </li>
+            <li>
+              <a className="hover:text-tech" target="_blank" href="https://goo.gl/maps/ZoVhwxYpsMM21zXV9">
+              Panathineon 9
+              </a>
+            </li>
+             <li>
+              <a className="hover:text-tech" href="tel:+30 210 806 4614">
+              +30 210 806 4614
+              </a>
+            </li>
+
           </ul>
         </div>
       </div>
 
-      <div id="social" className="flex flex-col  items-center md:items-end">
+      <div id="social" className=" flex flex-col m-2  items-center md:items-end">
         <p className="text-tech font-extrabold mb-10">FOLLOW</p>
         <div className="flex mb-6">
         <Socials color={"white"} hover={"opacity-70"}></Socials>
