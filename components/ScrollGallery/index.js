@@ -95,24 +95,24 @@ const ScrollGallery = ({ sofia }) => {
           {/* <div id="item0" className="bg-red-500 w-[150px] h-[150px] sticky top-[50px] right-40"></div> */}
           <figure id="item0" className=" w-full aspect-[4/3] sm:aspect-[5/3] relative sticky top-[150px] right-40 ">
             <Image id="img1"
-              src="/stock3.webp"
+              src="/pics/pic18.webp"
               alt="blog-pic"
               fill="true"
-              className="object-cover rounded-3xl  opacity-0"
+              className="object-cover object-bottom rounded-3xl  opacity-0"
             ></Image>
             <Image
               id="img2"
-              src="/stock2.webp"
+              src="/pics/pic11.webp"
               alt="blog-pic"
               fill="true"
-              className="object-cover rounded-3xl opacity-0"
+              className="object-cover  rounded-3xl opacity-0"
             ></Image>
             <Image
               id="img3"
-              src="/stock1.webp"
+              src="/pics/pic5.webp"
               alt="blog-pic"
               fill="true"
-              className="object-cover rounded-3xl opacity-0"
+              className="object-cover object-[30%,20%] rounded-3xl opacity-0"
             ></Image>
           </figure>
         </div>

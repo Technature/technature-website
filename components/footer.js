@@ -23,11 +23,11 @@ export default function Footer({}) {
               Services
             </Link>
           </li>
-          <li>
+          {/* <li>
             <Link className="hover:text-tech" href="/Aboutus">
              About us
             </Link>
-          </li>
+          </li> */}
           <li>
             <Link className="hover:text-tech" href="/blog">
               Blog
