@@ -63,7 +63,7 @@ const ScrollGallery = ({ sofia }) => {
           {array.map((item,idx)=>{
 
             return(
-              <div className="mb-80">
+              <div className="mb-60">
               <div className="relative top-[33px] right-8 text-tech">{"0"+(idx+1)}</div>
               <h1
                 className={`${sofia.className} text-gray-800 tracking-tighter md:text-5xl text-3xl  mb-2 font-extrabold `}

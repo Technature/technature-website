@@ -16,7 +16,7 @@ function ServicesPage() {
   return (
     <>
       {/* SECTION 1 */}
-      <section className=" h-[100vh] relative width-full flex items-center justify-center flex-col md:flex-row bgImage  shadow-bgFade">
+      <section className=" h-[100vh] relative width-full flex items-center justify-center flex-col md:flex-row bgImage  shadow-bgFade pt-20 sm:pt-0">
         <ImageDistort src={"/services.svg"}></ImageDistort>
 
         <div className=" w-[90%] md:w-1/2 sm:w-1/2 lg:w-[37%] sm:ml-5 md:ml-10 lg:ml-40 mt-10 sm:mt-0 text-center sm:text-start flex flex-col items-center sm:items-start ">
