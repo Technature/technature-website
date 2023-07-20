@@ -16,7 +16,7 @@ function ServicesPage() {
   return (
     <>
       {/* SECTION 1 */}
-      <section className=" h-[100vh] relative width-full flex items-center justify-center flex-col md:flex-row bgImage  shadow-bgFade pt-20 sm:pt-0">
+      <section className=" h-[100vh] relative width-full flex items-center justify-center flex-col md:flex-row bgImage  shadow-bgFade pt-20 sm:pt-0 mt-5 xs:mt-0">
         <ImageDistort src={"/services.svg"}></ImageDistort>
 
         <div className=" w-[90%] md:w-1/2 sm:w-1/2 lg:w-[37%] sm:ml-5 md:ml-10 lg:ml-40 mt-10 sm:mt-0 text-center sm:text-start flex flex-col items-center sm:items-start ">
@@ -41,7 +41,7 @@ function ServicesPage() {
       </section>
 
       {/* SECTION 4 */}
-      <section className=" relative width-full flex flex-col items-center justify-start mt-5 sm:mt-10">
+      <section className=" relative width-full flex flex-col items-center justify-start mt-20 sm:mt-10">
         <div id="leftSide" className="w-full  px-5 sm:px-20">
           {servicesArray.map((service, idx) => {
             return (

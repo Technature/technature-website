@@ -9,13 +9,13 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Technature",
-  description: "Technature company website",
+  description: "Building digital experiences",
   openGraph: {
-    title: 'technature',
+    title: 'Technature',
     description: 'Building digital experiences',
     type:'website',
     url:"https://technature.gr",
-    image:"https://technaturegr.fra1.cdn.digitaloceanspaces.com/technature-website/logo4.png"
+   image:"/opengraph-image-logo4.png"
   },
 };
 
