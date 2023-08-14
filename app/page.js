@@ -14,19 +14,6 @@ const inter = Inter({ subsets: ["latin"] });
 
 const sofia = Sofia_Sans({ subsets: ["latin"] });
 
-const structuredData= {
-  "@context": "http://schema.org",
-  "@type": "Organization",
-    "name": "Jobeat",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Marousi, Athens, Greece",
-      "postalCode": "15124",
-      "streetAddress": "Panathineon 9"
-    },
-    "url": "https://www.technature.gr",
-        "image":"https://technaturegr.fra1.cdn.digitaloceanspaces.com/technature-website/logo4.png"
-  }
 
 
 
@@ -44,10 +31,7 @@ export default async function Home() {
 
   return (
     <main className={`${inter.className} `}>
- <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
-      />
+
       {/* SECTION 1 */}
       <section className=" h-[100vh] relative width-full  flex items-center justify-center flex-col sm:flex-row  bgImage shadow-bgFade">
 
