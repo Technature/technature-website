@@ -7,7 +7,7 @@ import axios from "axios"
 export default async function sitemap() {
 
 
-  const blogs = await axios.get(`https://technature.gr/blog/getAll`).then((res) => {
+  const blogs = await axios.get(`https://api.technature.gr/blog/getAll`).then((res) => {
     return res.data
   }).catch((err) => {
     console.log(err)
