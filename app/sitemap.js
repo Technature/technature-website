@@ -7,14 +7,14 @@ import axios from "axios"
 export default async function sitemap() {
 
 
-  const blogs = await axios.get(`${process.env.NEXT_PUBLIC_URL}/blog/getAll`).then((res) => {
+  const blogs = await axios.get(`https://technature.gr/blog/getAll`).then((res) => {
     return res.data
   }).catch((err) => {
     console.log(err)
   })
 
   const posts = blogs.map(({ _id, createdAt }) => ({
-    url: `${process.env.NEXT_PUBLIC_APP_URL}/blog/${_id}`,
+    url: `https://technature.gr/blog/${_id}`,
     lastModified: createdAt,
   }));
  
@@ -41,7 +41,7 @@ export default async function sitemap() {
 
 
   const routes = staticPages.map((route) => ({
-    url: `${process.env.NEXT_PUBLIC_APP_URL}${route}`,
+    url: `${"https://technature.gr"}${route}`,
     lastModified: new Date().toISOString(),
   }));
  
