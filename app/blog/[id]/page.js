@@ -30,7 +30,7 @@ export default async function BlogPage({ params, searchParams }) {
       console.log(err);
     });
 
-  console.log(purify.sanitize(blog.content));
+ 
   return (
     <>
       <section id="blog" className={` mb-20 w-full ${sofia.className} `}>
@@ -72,12 +72,13 @@ export default async function BlogPage({ params, searchParams }) {
 
           <div className="flex flex-col  lg:flex-row gap-6 ">
             {blogs.slice(0, 2).map((blog) => {
+            
               return (
                 <BlogCard
                   title={blog.title}
                   tags={blog.tags}
                   photoPath={blog.pathName}
-                  id
+                  id={blog._id}
                 ></BlogCard>
               );
             })}

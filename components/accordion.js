@@ -15,7 +15,7 @@ function Accordion({ sofia }) {
         const element=accordionContent[key]
    
       var isCollapsed = element.getAttribute('data-collapsed')==="false";
-      console.log(isCollapsed)
+     
     
   if(isCollapsed) {
     expandSection(element)

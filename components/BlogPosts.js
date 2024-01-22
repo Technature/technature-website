@@ -16,7 +16,7 @@ function BlogPosts({ blogs,tags }) {
     const handleFilter=(filter)=>(e)=>{
         setFilter(filter)
         setActive(1)
-        console.log(filter)
+  
     }
 
     const postsPerPage = 6

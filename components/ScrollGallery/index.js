@@ -10,7 +10,7 @@ const ScrollGallery = ({ sofia }) => {
     // Source credit: http://thenewcode.com/279/Rotate-Elements-on-Scroll-with-JavaScript
     var leftElement = document.getElementById('left')
     const leftHeight = leftElement.offsetHeight
-    console.log(leftHeight)
+  
     var rightElement = document.getElementById('right')
 
     rightElement.style.height = leftHeight + 'px';
@@ -42,7 +42,7 @@ const ScrollGallery = ({ sofia }) => {
 
     window.addEventListener("optimizedScroll", function () {
 
-      console.log(window.scrollY)
+   
 
       // // leftItem.style.transform = "translateY(" +( window.scrollY-(2900 ) )+ "px)";
       img1.style.opacity = window.scrollY>2000&&window.scrollY<2600?1:0

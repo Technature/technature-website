@@ -8,7 +8,6 @@ const sofia = Sofia_Sans({ subsets: ["latin"] });
 
 const ImageCard=(props)=> {
 
-    console.log(props)
 
 
     return ( 

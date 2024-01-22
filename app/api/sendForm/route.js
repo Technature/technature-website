@@ -4,7 +4,7 @@ import { NextResponse } from 'next/server'
 export async function POST(request) {
 
 const body=await request.json()
-console.log(body)
+
 
   const message = {
     from: body.from,
@@ -30,7 +30,6 @@ console.log(body)
 
  const sended=await transporter.sendMail (message);
 
- console.log(sended)
 
  if(!sended) return NextResponse.json("ooook")
 

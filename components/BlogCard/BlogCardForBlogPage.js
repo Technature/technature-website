@@ -12,7 +12,6 @@ const sofia = Sofia_Sans({ subsets: ["latin"] });
 
 const BlogCard = ({title,tags,photoPath,id}) => {
 
-    console.log(id)
     const [touched, setTouched] = useState(false);
 
     const handleMouseEnter=()=>{
